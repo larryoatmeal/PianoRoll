@@ -38,7 +38,6 @@ object Song{
 
 
   def randomNote(): Note = {
-    new Note(Random.nextInt(127), Random.nextInt(16 * 100), Random.nextInt(8))
+    new Note(Random.nextInt(127), Random.nextInt(16 * 200), Random.nextInt(8))
   }
-
 }

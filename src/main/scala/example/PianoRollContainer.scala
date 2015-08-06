@@ -8,11 +8,7 @@ import scala.collection.mutable
 class PianoRollContainer {
 
   var dirtyNote: Option[Note] = None
-
-
-
-
-  var locatorBeat: Int = 0
+  var locatorBeat: Double = 0.0
 
   var startBeat: Int = 0
   var widthBeats: Int = 100
@@ -25,11 +21,10 @@ class PianoRollContainer {
 
   def rollHighNote: Int = rollLowNote + rollRange
 
-
   //val notes = new mutable.TreeSet[Note]()(Note.orderingByStart)
   val song = Song.demoSong2
   val notes = new NotesDataStructure(song.measures * PianoRollConfig.BeatResolution, song.notes)
-  val tickLogic = new TickLogic(song)
+  val tickLogic = new TickRenderLogic(song)
 
   val STEP_RATIO = 20
 
@@ -99,6 +94,7 @@ class PianoRollContainer {
     rollRange = (rollRange / factor).max(minRollRange).toInt
   }
 
+  def nearestSnapBeat(beat: Double, snapUnit: Double) = tickLogic.nearestSnapBeat(beat, snapUnit)
 
 }
 

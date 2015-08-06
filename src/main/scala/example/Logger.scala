@@ -3,6 +3,18 @@ package example
 /**
  * Created by Larry on 7/11/15.
  */
+
+class Logger(clazz: Class[_]){
+  def verbose(msg: String) = Logger.debug(msg, clazz)
+  def info(msg: String) = Logger.info(msg, clazz)
+  def warn(msg: String) = Logger.warn(msg, clazz)
+  def error(msg: String) = Logger.error(msg, clazz)
+  def apply(msg: String) = Logger.debug(msg, clazz)
+}
+
+
+
+
 object Logger {
 
   def verbose(msg: String, clazz: Class[_]){
@@ -19,6 +31,10 @@ object Logger {
 
   def warn(msg: String, clazz: Class[_]){
     println(s"WARN:${clazz.getName} - $msg")
+  }
+
+  def error(msg: String, clazz: Class[_]){
+    println(s"ERROR:${clazz.getName} - $msg")
   }
 
 }

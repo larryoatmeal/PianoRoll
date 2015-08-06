@@ -22,7 +22,7 @@ object TickMarker{
   val ThirtySecondTick = -5
 }
 
-class TickLogic(song: Song){
+class TickRenderLogic(song: Song){
 
   /**
    * @param measure Last measure before next Meter change
@@ -85,6 +85,16 @@ class TickLogic(song: Song){
     }
     endPost.measure - deltaMeasure
   }
+
+  //TODO: refactor into above
+  def getMeasureMarkerBeatContainedIn(beat: Int) = {
+    cumulativeMeasureMarker.find({
+      measureMarker => {
+        measureMarker.beat > beat//beat which is greater
+      }
+    }).getOrElse(cumulativeMeasureMarker.last)
+  }
+
 
   def getBeatAtMeasure(measure: Int): Int ={
     //find first measure marker that is greater
@@ -258,6 +268,15 @@ class TickLogic(song: Song){
       TickMarker.SixteenthTick
     }
   }
+
+  def nearestSnapBeat(beat: Double, beatsPerQuantize: Double) = {
+    val measure = getMeasureClosestToBeat(beat.toInt, roundUp = false)
+    val measureStartBeat = getBeatAtMeasure(measure)
+    
+    val unitsOfQuantize = (beat - measureStartBeat)/beatsPerQuantize
+    measureStartBeat + unitsOfQuantize*beatsPerQuantize
+  }
+
 }
 
 

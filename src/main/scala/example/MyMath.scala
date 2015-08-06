@@ -37,4 +37,6 @@ object MyMath {
 
   def clamp(a: Int, low: Int, high: Int) = a max low min high
 
+  def within(x: Double, min: Double, max: Double) = (x >= min) && (x <= max)
+
 }

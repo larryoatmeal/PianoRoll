@@ -8,6 +8,8 @@ import org.scalajs.dom.html
 
 @JSExport
 object ScalaJSExample {
+  val log = new Logger(this.getClass)
+
 
   //These are basically vals, but need canvas first :(
   var inputManager: HTML5InputManager = null
@@ -32,13 +34,31 @@ object ScalaJSExample {
 
     ConfigColors.load()
 
-    dom.setInterval(render _, 60)
 
+//    while(true){
+      dom.requestAnimationFrame(render _)
+//    }
   }
 
+  var counter = 0
+  var prevTimStamp = 0.0
+  val frames = 1000
 
-  def render() ={
+  def render(timeStamp: Double): Unit ={
+    //FPS recording
+    if(counter % frames == 0){
+      val elapsedTime = timeStamp - prevTimStamp
+      val fps = frames*1000/elapsedTime
+      log(s"FPS $fps")
+      counter = 0
+      prevTimStamp = timeStamp
+    }
+    counter = counter + 1
+
     renderer.render(pianoRollBounds)
+    dom.requestAnimationFrame(render _)
   }
+
+
 
 }
