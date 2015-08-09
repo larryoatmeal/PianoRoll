@@ -19,9 +19,9 @@ class PianoRollController(pianoRollContainer: PianoRollContainer, pianoRollRende
 
   //TODO: Move drag logic into InputProcessor
 
-  var mouseDown = false
-  var mouseDownX = -1.0
-  var mouseDownY = -1.0
+//  var mouseDown = false
+//  var mouseDownX = -1.0
+//  var mouseDownY = -1.0
   var noteOffsetFromStartX = -1.0//difference between click and start of note
 
   var settings = new PianoRollSettings()
@@ -30,9 +30,10 @@ class PianoRollController(pianoRollContainer: PianoRollContainer, pianoRollRende
 
   override def onMouseDown(x: Double, y: Double): Unit = {
     //Logger.verbose(s"onMouseDown $x, $y", this.getClass)
-    mouseDown = true
-    mouseDownX = x
-    mouseDownY = y
+//    mouseDown = true
+//    mouseDownX = x
+//    mouseDownY = y
+    super.onMouseDown(x, y)
 
     if(pianoRollRenderer.gridRect.containsPoint(x, y)){
       Logger.verbose(s"Piano grid touched $x, $y", this.getClass)
@@ -68,14 +69,14 @@ class PianoRollController(pianoRollContainer: PianoRollContainer, pianoRollRende
     }
   }
 
-  override def onMouseMove(x: Double, y: Double): Unit = {
-
-    if(mouseDown){
-     onDrag(x, y, mouseDownX, mouseDownY)
-    }
-
-    //Logger.verbose(s"onMouseMove $x, $y", this.getClass)
-  }
+//  override def onMouseMove(x: Double, y: Double): Unit = {
+//
+//    if(mouseDown){
+//     onDrag(x, y, mouseDownX, mouseDownY)
+//    }
+//
+//    //Logger.verbose(s"onMouseMove $x, $y", this.getClass)
+//  }
 
   override def onDrag(x: Double, y: Double, mouseDownX: Double, mouseDownY: Double): Unit = {
     if(pianoRollRenderer.gridRect.containsPoint(x, y)){
@@ -128,10 +129,10 @@ class PianoRollController(pianoRollContainer: PianoRollContainer, pianoRollRende
   }
 
   override def onMouseUp(x: Double, y: Double): Unit = {
+    super.onMouseUp(x , y)
     pianoRollContainer.dirtyNote.foreach(note => pianoRollContainer.addNote(note))
-    mouseDown = false
+    //mouseDown = false
   }
-
 
 }
 
