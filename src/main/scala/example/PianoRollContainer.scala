@@ -23,7 +23,7 @@ class PianoRollContainer {
 
   //val notes = new mutable.TreeSet[Note]()(Note.orderingByStart)
   val song = Song.demoSong2
-  val notes = new NotesDataStructure(song.measures * PianoRollConfig.BeatResolution, song.notes)
+  val notes = new NotesDataStructure(song.measures * PianoRollConfig.BeatResolution, song.initNotes)
   val tickLogic = new TickRenderLogic(song)
 
   val STEP_RATIO = 20
@@ -43,7 +43,7 @@ class PianoRollContainer {
     val magnitude = MyMath.ceil(widthBeats, STEP_RATIO)
     val deltaBeat = if(right) magnitude else -magnitude
 
-    startBeat = MyMath.clamp(startBeat + deltaBeat, 0, tickLogic.totalBeats - widthBeats)
+    startBeat = MyMath.clamp(startBeat + deltaBeat, 0, song.totalBeats - widthBeats)
 //    startBeat = (startBeat + deltaBeat).max(0).min(pianoRollRuler.totalBeats - widthBeats)
 //    Logger.verbose(s"Start beat $startBeat", this.getClass)
   }
@@ -72,7 +72,7 @@ class PianoRollContainer {
 
   def zoomOut(factor: Double) = {
 //    Logger.verbose(s"Zooming in by $factor", this.getClass)
-    widthBeats = (widthBeats * factor).min(tickLogic.totalBeats-startBeat).toInt
+    widthBeats = (widthBeats * factor).min(song.totalBeats-startBeat).toInt
   }
 
   //TODO: move these

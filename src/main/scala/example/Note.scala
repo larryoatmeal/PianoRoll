@@ -7,7 +7,6 @@ package example
 class Note(val midi: Int, val beatPosition: Double, val lengthInBeats: Double){
   override def toString: String = s"Note(midi: $midi, beatPosition: $beatPosition, lengthInBeats: $lengthInBeats)"
   val endBeat = lengthInBeats + beatPosition
-
 }
 
 object Note{

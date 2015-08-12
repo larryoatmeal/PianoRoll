@@ -10,6 +10,8 @@ class Logger(clazz: Class[_]){
   def warn(msg: String) = Logger.warn(msg, clazz)
   def error(msg: String) = Logger.error(msg, clazz)
   def apply(msg: String) = Logger.debug(msg, clazz)
+
+  def this(thing: Object) = this(thing.getClass)
 }
 
 

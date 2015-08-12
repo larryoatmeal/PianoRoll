@@ -15,6 +15,7 @@ import scala.collection.mutable.ArrayBuffer
  */
 class NotesDataStructure(totalBeats: Int, initialNotes: Vector[Note]){
 
+  val log = new Logger(this.getClass)
   //2 measures
   val BeatsPerBucket = PianoRollConfig.BeatResolution * 2
 
@@ -68,30 +69,42 @@ class NotesDataStructure(totalBeats: Int, initialNotes: Vector[Note]){
     val startBucketIndex = (startBeat/BeatsPerBucket).toInt
     val endBucket = (endBeat/BeatsPerBucket).toInt
     Iterator.range(startBucketIndex, endBucket+1)
-      .flatMap(dataStructure(_).iterator)
+      .flatMap(bucket => {
+        dataStructure(bucket).iterator}
+      )
       .filter(note => note.beatPosition >= startBeat && note.beatPosition < endBeat)
   }
 
+  def iteratorStart(startBeat: Double): Iterator[Note] = iterator(startBeat, numBuckets*BeatsPerBucket-1)
 
-//
-//  def sortAllNotes(): Unit ={
-//
-//
-//
-//
-//  }
+  def sort(): Unit ={
+    dataStructure.foreach{insertionSort}
+  }
 
-//
-//  def sortAndGetAllNotes(): Array[Note] = {
-//    //first sort everything
-//
-//    ArrayBuffer
-//
-//    dataStructure.foreach(bucket => {
-//      bucket
-//    })
-//
-//  }
+  def insertionSort(arrayBuffer: ArrayBuffer[Note]): Unit ={
+    val length = arrayBuffer.length
+    if(length > 1){
+      var i = 1
+      while( i < length){
+        val candidateNote = arrayBuffer(i)
+        var j = i
+        while(j > 0 && arrayBuffer(j-1).beatPosition > candidateNote.beatPosition) {
+          arrayBuffer(j) = arrayBuffer(j - 1)//shift elements to the right
+          j = j -1
+        }
+        arrayBuffer(j) = candidateNote
+        i += 1
+      }
+    }
+  }
+
+  def empty() = {
+    dataStructure.foreach{
+      case notes: ArrayBuffer[Note] => notes.clear()
+    }
+  }
+
+
   override def toString(): String = {
       dataStructure.map{
         bucket => bucket.map{

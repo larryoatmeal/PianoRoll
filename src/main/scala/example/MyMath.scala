@@ -39,4 +39,40 @@ object MyMath {
 
   def within(x: Double, min: Double, max: Double) = (x >= min) && (x <= max)
 
+  //Look at elements pair by pair and do something
+  def pairWiseCompute[A,B](l: Seq[A])(f: (A, A) => B): Seq[B] = {
+    (l, l drop 1).zipped.map({
+      (first, second) => f(first, second)
+    })
+  }
+
+  def pairWiseComputeAppend[A,B](l: Seq[A])(f: (A, A) => B): Seq[(A,B)] = {
+    pairWiseCompute(l)((first, second) => (second, f(first, second)))
+  }
+
+  //Look at elements pair by pair and then accumulate along the way
+  def cumulativeDist[A,B](l: Seq[A], initAccum: B)(accumF: (A, B) => B) = {
+    l.map{
+      var accumulator: B = initAccum
+      elem => {
+        accumulator = accumF(elem, accumulator)
+        accumulator
+      }
+    }
+  }
+
+//  def getCumulativeFencePost[A,B](l: Seq[A], createEndCap: A => A, delta: (A,A) => Double,
+//                                  accum: ((A, Double), Double) => B): Seq[B] = {
+//    //Add end cap to balance for the deltas
+//    val balanced = l :+ createEndCap(l.last)
+//
+//    //A sequence consisting of tuples of the first element and how long it applied for
+//    val deltaMeasures: Seq[(A, Double)] = pairWiseCompute(balanced)((first: A, second: A) =>{
+//      (first, delta(first, second))
+//    })
+//  }
+
+
+
+
 }

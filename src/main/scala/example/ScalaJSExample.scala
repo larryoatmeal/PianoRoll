@@ -18,6 +18,7 @@ object ScalaJSExample {
   var renderer: PianoRollRenderer = null
   var pianoRollBounds: Rectangle = null
 
+
   @JSExport
   def main(canvas: html.Canvas): Unit = {
 
@@ -32,17 +33,13 @@ object ScalaJSExample {
     controller = new PianoRollController(container, renderer)
     inputManager.setInputProcessor(controller)
 
-    ConfigColors.load()
-
-
-//    while(true){
-      dom.requestAnimationFrame(render _)
-//    }
+//    ConfigColors.load()
+    dom.requestAnimationFrame(render _)
   }
 
   var counter = 0
   var prevTimStamp = 0.0
-  val frames = 1000
+  val frames = 100
 
   def render(timeStamp: Double): Unit ={
     //FPS recording

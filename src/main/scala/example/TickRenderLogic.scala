@@ -24,193 +24,119 @@ object TickMarker{
 
 class TickRenderLogic(song: Song){
 
-  /**
-   * @param measure Last measure before next Meter change
-   * @param beat Last beat before next Meter change
-   * @param meter Meter that applied until measure/beat
-   */
-  case class MeasureMarker(measure: Int, beat: Int, meter: Int)
 
-  val MeasureToBeatMap: Vector[Int] = Vector.range(0, song.measures).map(
-    measure => getBeatAtMeasure(measure)
-  )
+//  val MeasureToBeatMap: Vector[Int] = Vector.range(0, song.measures).map(
+//    measure => getBeatAtMeasure(measure)
+//  )
 
   //val BeatToMeasureMap: Map[Int, Int] = MeasureToBeatMap.map(_.swap)
 
   //goal post (beatNumber, meter up to this point)
-  lazy val cumulativeMeasureMarker = getCumulativeMeasureMarker
-  val totalBeats = cumulativeMeasureMarker.last.beat
+//  lazy val cumulativeMeasureMarker = getCumulativeMeasureMarker
+//  val totalBeats = cumulativeMeasureMarker.last.beat
 
   //lazy val totalBeats = cumulativeMeasureMarker.last.beat
 
-  def getCumulativeMeasureMarker: Vector[MeasureMarker] = {
-    val meterChanges = song.meterChanges
-
-    //for the math
-    val lastMeterChange = meterChanges.last
-    val endCapMeterChange = lastMeterChange.copy(measure = song.measures)
-    val balancedMeterChanges = song.meterChanges :+ endCapMeterChange
-
-    //1: difference in measures
-    //2: meter that applies during that span
-    //3: ending measure number of that span
-    val deltaMeasures: Vector[(Int, Int, Int)] = (balancedMeterChanges, balancedMeterChanges drop 1).zipped.map({
-      (first, second) => (second.measure - first.measure, first.meter, second.measure)
-    })
-
-    deltaMeasures.map{
-      var accumulator = 0
-      d => {
-        val (deltaMeasures, meter, measure) = d
-        val deltaBeats = deltaMeasures*meter
-        accumulator += deltaBeats
-        MeasureMarker(measure, accumulator, meter)
-      }
-    }
-  }
-
-  def getMeasureClosestToBeat(desiredBeat: Int, roundUp: Boolean): Int ={
-    //find first measure marker that is greater
-    val endPost = cumulativeMeasureMarker.find({
-      measureMarker => {
-        measureMarker.beat > desiredBeat//beat which is greater
-      }
-    }).getOrElse(cumulativeMeasureMarker.last)//note, we should always be able to find this
-
-    //we are subtracting so roundUp is subtracting a floor, and vice versa
-    val deltaMeasure = if(roundUp){
-      (endPost.beat - desiredBeat)/endPost.meter
-    } else{
-      MyMath.ceil(endPost.beat - desiredBeat,endPost.meter)
-    }
-    endPost.measure - deltaMeasure
-  }
-
-  //TODO: refactor into above
-  def getMeasureMarkerBeatContainedIn(beat: Int) = {
-    cumulativeMeasureMarker.find({
-      measureMarker => {
-        measureMarker.beat > beat//beat which is greater
-      }
-    }).getOrElse(cumulativeMeasureMarker.last)
-  }
-
-
-  def getBeatAtMeasure(measure: Int): Int ={
-    //find first measure marker that is greater
-    val endPost = cumulativeMeasureMarker.find({
-      measureMarker => {
-        measureMarker.measure > measure//measure which is greater
-      }
-    }).getOrElse(cumulativeMeasureMarker.last)//note, we should always be able to find this
-
-    val offsetFromEndPost = (endPost.measure - measure)*endPost.meter
-    endPost.beat - offsetFromEndPost
-  }
-
-  /**
-   *
-   * @param startBeat Starting beat at left edge of window
-   * @param endBeat Starting beat at right edge of window
-   * @return List of tuples with measure numbers and the beats they correspond to
-   */
-  def getMeasureMarkers(startBeat: Int, endBeat: Int): Seq[(Int, Int)] = {
-    if(song.meterChanges.size == 1){
-      getMeasureMarkersNoMeterChange(startBeat, endBeat)
-    }else {
-      val width = endBeat - startBeat
-      val firstMeasure = getMeasureClosestToBeat(startBeat, roundUp = true)
-      val lastMeasure = getMeasureClosestToBeat(endBeat, roundUp = false)
-
-      val measureInterval = MyMath.ceil(lastMeasure - firstMeasure, PianoRollConfig.MaxMeasureTicksShownInRuler)
-
-      val range: Range = firstMeasure until lastMeasure+measureInterval by measureInterval
-
-      range.map {
-        measure => (measure, getBeatAtMeasure(measure))
-      }
-    }
-  }
-
-//  private def getMeasureMarkerIterator(startBeat:Int, endBeat: Int): Iterator[(Int, Int)] = {
-//    val firstMeasure = getMeasureClosestToBeat(startBeat, roundUp = true)
-//    val lastMeasure = getMeasureClosestToBeat(endBeat, roundUp = false)
-//    val measureInterval = MyMath.ceil(lastMeasure - firstMeasure, PianoRollConfig.MaxMeasureTicksShownInRuler)
+//  def getCumulativeMeasureMarker: Vector[MeasureMarker] = {
+//    val meterChanges = song.meterChanges
 //
-//    for{measure <- Iterator.range(firstMeasure, lastMeasure+1, measureInterval)}
-//      yield (measure, getBeatAtMeasure(measure))
+//    //for the math
+//    val lastMeterChange = meterChanges.last
+//    val endCapMeterChange = lastMeterChange.copy(measure = song.measures)
+//    val balancedMeterChanges = song.meterChanges :+ endCapMeterChange
+//
+//    //1: difference in measures
+//    //2: meter that applies during that span
+//    //3: ending measure number of that span
+//    val deltaMeasures: Vector[(Int, Int, Int)] = (balancedMeterChanges, balancedMeterChanges drop 1).zipped.map({
+//      (first, second) => (second.measure - first.measure, first.meter, second.measure)
+//    })
+//
+//    deltaMeasures.map{
+//      var accumulator = 0
+//      d => {
+//        val (deltaMeasures, meter, measure) = d
+//        val deltaBeats = deltaMeasures*meter
+//        accumulator += deltaBeats
+//        MeasureMarker(measure, accumulator, meter)
+//      }
+//    }
 //  }
 
-  private def getMeasureMarkersNoMeterChange(startBeat: Int, endBeat: Int): Seq[(Int,Int)] = {//more efficient implementation
-    val meter: Int = song.meterChanges.head.meter//only one meter
-
-    val firstMeasure = MyMath.ceil(startBeat,meter)
-    val lastMeasure = endBeat/meter
-    val measureInterval = MyMath.ceil(lastMeasure - firstMeasure, PianoRollConfig.MaxMeasureTicksShownInRuler)
-
-    val range: Range = firstMeasure until lastMeasure by measureInterval
-    range.map{
-      measure => (measure, measure * meter)
-    }
-  }
+//  def getMeasureClosestToBeat(desiredBeat: Int, roundUp: Boolean): Int ={
+//    //find first measure marker that is greater
+//    val endPost = cumulativeMeasureMarker.find({
+//      measureMarker => {
+//        measureMarker.beat > desiredBeat//beat which is greater
+//      }
+//    }).getOrElse(cumulativeMeasureMarker.last)//note, we should always be able to find this
+//
+//    //we are subtracting so roundUp is subtracting a floor, and vice versa
+//    val deltaMeasure = if(roundUp){
+//      (endPost.beat - desiredBeat)/endPost.meter
+//    } else{
+//      MyMath.ceil(endPost.beat - desiredBeat,endPost.meter)
+//    }
+//    endPost.measure - deltaMeasure
+//  }
+//
+//  //TODO: refactor into above
+//  def getMeasureMarkerBeatContainedIn(beat: Int) = {
+//    cumulativeMeasureMarker.find({
+//      measureMarker => {
+//        measureMarker.beat > beat//beat which is greater
+//      }
+//    }).getOrElse(cumulativeMeasureMarker.last)
+//  }
+//
+//
+//  def getBeatAtMeasure(measure: Int): Int ={
+//    //find first measure marker that is greater
+//    val endPost = cumulativeMeasureMarker.find({
+//      measureMarker => {
+//        measureMarker.measure > measure//measure which is greater
+//      }
+//    }).getOrElse(cumulativeMeasureMarker.last)//note, we should always be able to find this
+//
+//    val offsetFromEndPost = (endPost.measure - measure)*endPost.meter
+//    endPost.beat - offsetFromEndPost
+//  }
 //
 //  /**
-//   * Return the symbol at this beat
-//   * @param beat
-//   * @param everyXMeasure Display every x measure, with x being multiple of 2. i.e., show every 4th measure
-//   * @return Positive integer if measure to be displayed, negative integers for symbol types
+//   *
+//   * @param startBeat Starting beat at left edge of window
+//   * @param endBeat Starting beat at right edge of window
+//   * @return List of tuples with measure numbers and the beats they correspond to
 //   */
-//  def getTickSymbol(beat: Int, everyXMeasure: Int): Int = {
-//    if(BeatToMeasureMap.contains(beat)){
-//      if(BeatToMeasureMap(beat) % everyXMeasure == 0){
-//        BeatToMeasureMap(beat)
-//      }else{
-//        PianoRollRulerRenderLogic.MeasureTick
-//      }
-//    }else{
-//      if(beat % 4 == 0){//quarter note
-//        PianoRollRulerRenderLogic.QuarterTick
-//      }else if(beat % 2 == 0){
-//        PianoRollRulerRenderLogic.EightTick
-//      }else{
-//        PianoRollRulerRenderLogic.SixteenthTick
-//      }
-//    }
-//  }
-
-
-  //def getTickPrecision(startBeat: Int, endBeat: Int, numTicks: Int): Int = (endBeat - startBeat)/numTicks%2
-
-//  def getTickMarkers(startBeat: Int, widthBeat: Int, maxTicks: Int, maxMeasures: Int): Iterator[TickMarker] = {
-////    val startMeasure = getMeasureClosestToBeat(startBeat, roundUp = true)
-////    val endMeasure = getMeasureClosestToBeat(endBeat, roundUp = false)
-////    val beatPerTickMult2 = MyMath.ceil(deltaBeat, maxTicks)/2
-//
-//    val tickSize = MyMath.powerOfTwoAbove(widthBeat/maxTicks)
-//    //guess that most songs are 4/4
-//    val everyXMeasure = MyMath.powerOfTwoAbove(widthBeat/PianoRollConfig.BeatResolution/maxMeasures)
-//
-//    if(tickSize <= 4){
-//      val range = Iterator.range(startBeat, startBeat + widthBeat + tickSize, tickSize)
-//      for{beat <- range}
-//        yield TickMarker(beat, getTickSymbol(beat, everyXMeasure))
-//    }else{
+//  def getMeasureMarkers(startBeat: Int, endBeat: Int): Seq[(Int, Int)] = {
+//    if(song.meterChanges.size == 1){
+//      getMeasureMarkersNoMeterChange(startBeat, endBeat)
+//    }else {
+//      val width = endBeat - startBeat
 //      val firstMeasure = getMeasureClosestToBeat(startBeat, roundUp = true)
-//      val lastMeasure = getMeasureClosestToBeat(startBeat + widthBeat, roundUp = false)
-//      val stepSize = MyMath.ceil(lastMeasure - firstMeasure, maxTicks)
+//      val lastMeasure = getMeasureClosestToBeat(endBeat, roundUp = false)
 //
-////      Logger.debug(s"$stepSize, $lastMeasure, $firstMeasure", this.getClass)
+//      val measureInterval = MyMath.ceil(lastMeasure - firstMeasure, PianoRollConfig.MaxMeasureTicksShownInRuler)
 //
-//      val range = Iterator.range(firstMeasure/everyXMeasure*everyXMeasure,lastMeasure, stepSize)
+//      val range: Range = firstMeasure until lastMeasure+measureInterval by measureInterval
 //
-//      for{measure <- range}
-//        yield TickMarker(getBeatAtMeasure(measure),
-//          if(measure % everyXMeasure == 0) measure else PianoRollRulerRenderLogic.MeasureTick)
+//      range.map {
+//        measure => (measure, getBeatAtMeasure(measure))
+//      }
 //    }
 //  }
-
-//  def getTickMarkersByMeasure(startMeasure: Int, widthBeat: Int, maxTicks: Int, maxMeasures:Int):Iterator[TickMarker] = {
-//    getTickMarkersByMeasure(MeasureToBeatMap.getOrElse(startMeasure, 0), widthBeat, maxTicks, maxMeasures)
+//
+//  private def getMeasureMarkersNoMeterChange(startBeat: Int, endBeat: Int): Seq[(Int,Int)] = {//more efficient implementation
+//    val meter: Int = song.meterChanges.head.meter//only one meter
+//
+//    val firstMeasure = MyMath.ceil(startBeat,meter)
+//    val lastMeasure = endBeat/meter
+//    val measureInterval = MyMath.ceil(lastMeasure - firstMeasure, PianoRollConfig.MaxMeasureTicksShownInRuler)
+//
+//    val range: Range = firstMeasure until lastMeasure by measureInterval
+//    range.map{
+//      measure => (measure, measure * meter)
+//    }
 //  }
 
   /**
@@ -223,9 +149,9 @@ class TickRenderLogic(song: Song){
    */
   def getTickMarkers(startBeat: Int, widthBeat: Int,
                      maxTicksPerWindow: Int = 100, subdivideMeasuresThresh: Int = 30): Iterator[TickMarker] = {
-    val startMeasure = getMeasureClosestToBeat(startBeat, roundUp = false)
+    val startMeasure = song.getMeasureClosestToBeat(startBeat, roundUp = false)
     val endBeat = startBeat + widthBeat//noninclusive
-    val endMeasure = getMeasureClosestToBeat(endBeat, roundUp = false)
+    val endMeasure = song.getMeasureClosestToBeat(endBeat, roundUp = false)
 
     val widthMeasures = endMeasure - startMeasure
 
@@ -233,18 +159,18 @@ class TickRenderLogic(song: Song){
       val stepSize = MyMath.ceil(widthMeasures, 30)
       val adjustedStartMeasure = startMeasure/stepSize*stepSize
       val adjustedStartMeasureV2 =
-        if(MeasureToBeatMap(adjustedStartMeasure) < startBeat) adjustedStartMeasure + stepSize
+        if(song.MeasureToBeatMap(adjustedStartMeasure) < startBeat) adjustedStartMeasure + stepSize
         else adjustedStartMeasure
       //bound issues, ensure start measure is actually visible
       for {
         measure <- Iterator.range(adjustedStartMeasureV2, endMeasure, stepSize)
-      }yield TickMarker(MeasureToBeatMap(measure), measure)
+      }yield TickMarker(song.MeasureToBeatMap(measure), measure)
     }else{
       val tickSize = MyMath.powerOfTwoAbove(widthBeat/maxTicksPerWindow)
       for{
         measure <- Iterator.range(startMeasure, endMeasure + 1)
-        startBeatOfMeasure = MeasureToBeatMap(measure)
-        beat <- Iterator.range(startBeatOfMeasure, MeasureToBeatMap(measure+1), tickSize)
+        startBeatOfMeasure =song.MeasureToBeatMap(measure)
+        beat <- Iterator.range(startBeatOfMeasure, song.MeasureToBeatMap(measure+1), tickSize)
         if beat >= startBeat && beat < endBeat
       } yield {
         TickMarker(beat, if(beat == startBeatOfMeasure) measure else getTickSymbol(beat, startBeatOfMeasure))
@@ -270,8 +196,8 @@ class TickRenderLogic(song: Song){
   }
 
   def nearestSnapBeat(beat: Double, beatsPerQuantize: Double) = {
-    val measure = getMeasureClosestToBeat(beat.toInt, roundUp = false)
-    val measureStartBeat = getBeatAtMeasure(measure)
+    val measure = song.getMeasureClosestToBeat(beat.toInt, roundUp = false)
+    val measureStartBeat = song.MeasureToBeatMap(measure)
     
     val unitsOfQuantize = (beat - measureStartBeat)/beatsPerQuantize
     measureStartBeat + unitsOfQuantize*beatsPerQuantize

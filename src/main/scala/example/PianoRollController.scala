@@ -1,38 +1,24 @@
 package example
 
-import scala.util.Random
-
 /**
  * Created by Larry on 7/11/15.
  */
 
 import PianoRollSettings._
+import example.audio.{AudioManager, NotePlayer, Synth}
 
 class PianoRollController(pianoRollContainer: PianoRollContainer, pianoRollRenderer: PianoRollRenderer) extends InputProcessor{
 
-//  //TODO: refactor out?
-//
-//  val StateSelect = 0//selecting, moving
-//  val StateEdit = 1//adding notes, shrinking/expanding notes
-//  val StateAdd = 2
-//  var state = StateSelect
-
-  //TODO: Move drag logic into InputProcessor
-
-//  var mouseDown = false
-//  var mouseDownX = -1.0
-//  var mouseDownY = -1.0
   var noteOffsetFromStartX = -1.0//difference between click and start of note
 
   var settings = new PianoRollSettings()
+//  var synth = new Synth()
+
+  val notePlayer = new NotePlayer(pianoRollContainer)
 
   val log = new Logger(this.getClass)
 
   override def onMouseDown(x: Double, y: Double): Unit = {
-    //Logger.verbose(s"onMouseDown $x, $y", this.getClass)
-//    mouseDown = true
-//    mouseDownX = x
-//    mouseDownY = y
     super.onMouseDown(x, y)
 
     if(pianoRollRenderer.gridRect.containsPoint(x, y)){
@@ -69,15 +55,6 @@ class PianoRollController(pianoRollContainer: PianoRollContainer, pianoRollRende
     }
   }
 
-//  override def onMouseMove(x: Double, y: Double): Unit = {
-//
-//    if(mouseDown){
-//     onDrag(x, y, mouseDownX, mouseDownY)
-//    }
-//
-//    //Logger.verbose(s"onMouseMove $x, $y", this.getClass)
-//  }
-
   override def onDrag(x: Double, y: Double, mouseDownX: Double, mouseDownY: Double): Unit = {
     if(pianoRollRenderer.gridRect.containsPoint(x, y)){
 
@@ -97,9 +74,7 @@ class PianoRollController(pianoRollContainer: PianoRollContainer, pianoRollRende
     }
   }
 
-
   override def onKey(keyCode: Int): Unit = {
-    //Logger.verbose(s"onKey $keyCode", this.getClass)
     keyCode match{
       case KeyCode.LEFT => pianoRollContainer.shiftBeat(right = false)
       case KeyCode.RIGHT => pianoRollContainer.shiftBeat(right = true)
@@ -113,6 +88,12 @@ class PianoRollController(pianoRollContainer: PianoRollContainer, pianoRollRende
       case KeyCode.S => settings.state = StateSelect
       case KeyCode.E => settings.state = StateEdit
       case KeyCode.A => settings.state = StateAdd
+      case KeyCode.C => pianoRollContainer.notes.empty()
+//      case KeyCode.P => synth.play()
+      case KeyCode.P => {
+        notePlayer.prepare()
+        notePlayer.setPlayPoint(0, AudioManager.audio.currentTime)
+      }
       case _ =>
     }
   }
@@ -123,6 +104,7 @@ class PianoRollController(pianoRollContainer: PianoRollContainer, pianoRollRende
       case KeyCode.RIGHT => pianoRollContainer.zoomIn(PianoRollController.Zoom)
       case KeyCode.UP => pianoRollContainer.zoomInRoll(PianoRollController.Zoom)
       case KeyCode.DOWN => pianoRollContainer.zoomOutRoll(PianoRollController.Zoom)
+      case KeyCode.P => notePlayer.stop()
 
       case _ => 
     }
@@ -131,7 +113,6 @@ class PianoRollController(pianoRollContainer: PianoRollContainer, pianoRollRende
   override def onMouseUp(x: Double, y: Double): Unit = {
     super.onMouseUp(x , y)
     pianoRollContainer.dirtyNote.foreach(note => pianoRollContainer.addNote(note))
-    //mouseDown = false
   }
 
 }
