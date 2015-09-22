@@ -5,7 +5,7 @@ import scala.collection.mutable
 /**
  * Created by Larry on 7/11/15.
  */
-class PianoRollContainer {
+class PianoRollWorld {
 
   var dirtyNote: Option[Note] = None
   var locatorBeat: Double = 0.0
@@ -19,6 +19,9 @@ class PianoRollContainer {
   var rollLowNote: Int = 50
   var rollRange: Int = 40
 
+  val settings = new PianoRollSettings()
+  val messageQueue = new MessageQueue()
+
   def rollHighNote: Int = rollLowNote + rollRange
 
   //val notes = new mutable.TreeSet[Note]()(Note.orderingByStart)
@@ -27,6 +30,8 @@ class PianoRollContainer {
   val tickLogic = new TickRenderLogic(song)
 
   val STEP_RATIO = 20
+
+  def endBeat = startBeat + widthBeats
 
   def addNote(note: Note): Unit ={
 //    Logger.verbose(s"Adding $note", this.getClass)
@@ -48,30 +53,15 @@ class PianoRollContainer {
 //    Logger.verbose(s"Start beat $startBeat", this.getClass)
   }
 
-//  def shiftMeasure(deltaMeasure: Int)={
-//    val newMeasure = startMeasure + deltaMeasure
-//
-//
-//    if(pianoRollRuler.getBeatAtMeasure(newMeasure) > pianoRollRuler.totalBeats-widthBeats){
-//
-//    }
-//
-//
-//    val capMeasure = pianoRollRuler.getMeasureClosestToBeat(pianoRollRuler.totalBeats-widthBeats, roundUp = true)
-//    startMeasure = MyMath.clamp(newMeasure, 0, capMeasure)
-//    startBeat = pianoRollRuler.getBeatAtMeasure(startMeasure)
-//    //    startBeat = (startBeat + deltaBeat).max(0).min(pianoRollRuler.totalBeats - widthBeats)
-//    Logger.verbose(s"Start meat $startMeasure", this.getClass)
-//  }
-
+  def safeSetBeat(beat: Double)={
+    startBeat = Math.min(beat, song.totalBeats - widthBeats).toInt
+  }
 
   def zoomIn(factor: Double) = {
-//    Logger.verbose(s"Zooming in by $factor", this.getClass)
     widthBeats = (widthBeats / factor).max(PianoRollConfig.BeatResolution).toInt
   }
 
   def zoomOut(factor: Double) = {
-//    Logger.verbose(s"Zooming in by $factor", this.getClass)
     widthBeats = (widthBeats * factor).min(song.totalBeats-startBeat).toInt
   }
 

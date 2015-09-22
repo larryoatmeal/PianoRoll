@@ -6,7 +6,7 @@ import org.scalajs.dom.raw.CanvasRenderingContext2D
 /**
  * Created by Larry on 7/26/15.
  */
-class PianoRollRulerRenderer(val pianoRollContainer: PianoRollContainer,  val renderer: CanvasRenderingContext2D){
+class PianoRollRulerRenderer(val pianoRollContainer: PianoRollWorld,  val renderer: CanvasRenderingContext2D){
 
   def render(rect: Rectangle): Unit ={
     renderer.clearRect(rect.x, rect.y, rect.width, rect.height)

@@ -35,4 +35,6 @@ object KeyCode {
   val X = 88
   val Y = 90
   val Z = 91
+  val BACKSPACE = 8
+  val SPACE = 32
 }

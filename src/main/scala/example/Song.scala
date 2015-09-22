@@ -155,10 +155,9 @@ object Song{
     MeterChange(25, PianoRollConfig.BeatResolution)
   )//4/4
 
+  val demoSong = Song(demoOneNumMeasures, arpeggio, Vector(new BPMChange(0, 120)), demoOneMeterChanges)
 
-  val demoSong = Song(demoOneNumMeasures, arpeggio, demoOneBPMChanges, demoOneMeterChanges)
-
-  val demoSong2 =demoSong.copy(meterChanges = demoTwoMeterChanges)
+  val demoSong2 =demoSong
 
   def randomNote(): Note = {
     new Note(Random.nextInt(20)+50, Random.nextInt(16 * 200)/4 * 4, 8)

@@ -19,9 +19,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="SBT: org.scala-js:scalajs-library_2.11:0.6.1:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.11.5:jar" level="project" />
     <orderEntry type="library" name="SBT: com.scalawarrior:scalajs-createjs_sjs0.6_2.11:0.0.1-SNAPSHOT:jar" level="project" />
     <orderEntry type="library" name="SBT: org.scala-js:scalajs-dom_sjs0.6_2.11:0.8.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-js:scalajs-library_2.11:0.6.5:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.11.7:jar" level="project" />
   </component>
 </module>

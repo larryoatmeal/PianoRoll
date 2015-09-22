@@ -62,9 +62,18 @@ class HTML5InputManager(val canvas: html.Canvas){
           if(e.shiftKey){
             inputProcessor.onKeyWithShift(e.keyCode)
           }else{
+            if(e.keyCode == KeyCode.BACKSPACE){//prevent back navigation
+              e.preventDefault()
+            }
             inputProcessor.onKey(e.keyCode)
           }
         }
+      }
+    }
+
+    canvas.onmousewheel = {
+      (e: dom.MouseEvent) => {
+        e.preventDefault()
       }
     }
 

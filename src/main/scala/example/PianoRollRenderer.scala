@@ -8,21 +8,31 @@ import scala.scalajs.js.Any
 /**
  * Created by Larry on 7/12/15.
  */
-class PianoRollRenderer(pRollCtrl: PianoRollContainer, canvas: html.Canvas, rect: Rectangle) {
+class PianoRollRenderer(pRollWorld: PianoRollWorld, canvas: html.Canvas, rect: Rectangle) {
 
   import PianoRollRenderer._
 
   val log = new Logger(getClass)
 
-  val settingsRect = Rectangle(rect.x, rect.y, rect.width, rect.height/10)
-  val rulerRect = Rectangle(rect.x, rect.y+settingsRect.height, rect.width, rect.height / 10)
-  val gridRect = Rectangle(rect.x, rect.y + rulerRect.height + settingsRect.height, rulerRect.width, rect.height - rulerRect.height - settingsRect.height)
+  val menuRect = Rectangle(rect.x, rect.y, rect.width, rect.height/10)
+  val rulerRect = Rectangle(rect.x, rect.y+menuRect.height, rect.width, rect.height / 10)
+  val gridRect = Rectangle(rect.x, rect.y + rulerRect.height + menuRect.height, rulerRect.width, rect.height - rulerRect.height - menuRect.height)
+
+  //val settings2Rect = Rectangle(100, 100, 200, 200)
+//  val toolRect = Rectangle(300, 100, 400, 400)
 
   val playAreaRect = Rectangle(rulerRect.x, rulerRect.y, rulerRect.width, rulerRect.height + gridRect.height)
 
 
+
   //Setup
-  val renderer: CanvasRenderingContext2D = canvas.getContext("2d").asInstanceOf[dom.CanvasRenderingContext2D]
+  val ctx: CanvasRenderingContext2D = canvas.getContext("2d").asInstanceOf[dom.CanvasRenderingContext2D]
+
+  //val settingsRenderer = new SettingsRenderer(pRollWorld.settings, ctx, settingsRect)
+  //val settingsRenderer2 = new SettingsRenderer2(settings2Rect, ctx)
+  val menuRenderer = new MenuRenderer(ctx, menuRect, pRollWorld.messageQueue)
+  menuRenderer.selectToolExternal(MessageQueue.TOOL_SELECT)//initialize to select
+
   init()
 
   //  val pianoRollRulerRenderer : PianoRollRulerRenderer = new PianoRollRulerRenderer(pianoRollContainer, renderer)
@@ -32,18 +42,18 @@ class PianoRollRenderer(pRollCtrl: PianoRollContainer, canvas: html.Canvas, rect
     canvas.height = canvas.parentElement.clientHeight
     canvas.width = canvas.parentElement.clientWidth
 
-    renderer.fillStyle = "#f3a342"
-    renderer.fillRect(0, 0, canvas.width, canvas.height)
-    renderer.font = "48px serif"
+    ctx.fillStyle = "#f3a342"
+    ctx.fillRect(0, 0, canvas.width, canvas.height)
+    ctx.font = "48px serif"
   }
 
   def render(rect: Rectangle): Unit = {
-    renderer.clearRect(rect.x, rect.y, rect.width, rect.height)
+    ctx.clearRect(rect.x, rect.y, rect.width, rect.height)
 
     renderRollHorizontalLines()
 
-    pRollCtrl.tickLogic.getTickMarkers(
-      pRollCtrl.startBeat, pRollCtrl.widthBeats
+    pRollWorld.tickLogic.getTickMarkers(
+      pRollWorld.startBeat, pRollWorld.widthBeats
     ).foreach({
       tickMarker => {
         renderRuler(tickMarker)
@@ -52,8 +62,12 @@ class PianoRollRenderer(pRollCtrl: PianoRollContainer, canvas: html.Canvas, rect
     })
 
     renderNotes()
-    renderSettings()
+    //renderSettings()
     renderLocator()
+
+    //settingsRenderer2.draw()
+    menuRenderer.draw()
+
   }
 
   Logger.debug(rect.toString, getClass)
@@ -67,19 +81,19 @@ class PianoRollRenderer(pRollCtrl: PianoRollContainer, canvas: html.Canvas, rect
       case TickMarker.SixteenthTick => ("#00FFFF", rulerRect.height / 4)
       case _ => ("#66E066", rulerRect.height)
     }
-    renderer.strokeStyle = color
+    ctx.strokeStyle = color
 
-    renderer.beginPath()
-    val x = (tickMarker.beat - pRollCtrl.startBeat).toDouble / pRollCtrl.widthBeats * rulerRect.width + rulerRect.x
-    renderer.moveTo(x, rulerRect.y)
-    renderer.lineTo(x, rulerRect.y + height)
-    renderer.stroke()
+    ctx.beginPath()
+    val x = (tickMarker.beat - pRollWorld.startBeat).toDouble / pRollWorld.widthBeats * rulerRect.width + rulerRect.x
+    ctx.moveTo(x, rulerRect.y)
+    ctx.lineTo(x, rulerRect.y + height)
+    ctx.stroke()
 
-    renderer.fillStyle = "#000000"
-    renderer.font = "12pt Calibri"
+    ctx.fillStyle = "#000000"
+    ctx.font = "12pt Calibri"
     if (tickMarker.symbol > 0) {
       //display measure number
-      renderer.fillText((tickMarker.symbol + 1).toString, x, rulerRect.y + rulerRect.height * 4 / 5)
+      ctx.fillText((tickMarker.symbol + 1).toString, x, rulerRect.y + rulerRect.height * 4 / 5)
     }
   }
 
@@ -90,110 +104,111 @@ class PianoRollRenderer(pRollCtrl: PianoRollContainer, canvas: html.Canvas, rect
       case TickMarker.SixteenthTick => "#AAAAAA"
       case _ => "#000000"
     }
-    renderer.strokeStyle = color
+    ctx.strokeStyle = color
 
     //vertical
-    val x = (tickMarker.beat - pRollCtrl.startBeat).toDouble / pRollCtrl.widthBeats * gridRect.width + gridRect.x
-    renderer.beginPath()
-    renderer.moveTo(x, gridRect.y)
-    renderer.lineTo(x, gridRect.bottomY)
-    renderer.stroke()
+    val x = (tickMarker.beat - pRollWorld.startBeat).toDouble / pRollWorld.widthBeats * gridRect.width + gridRect.x
+    ctx.beginPath()
+    ctx.moveTo(x, gridRect.y)
+    ctx.lineTo(x, gridRect.bottomY)
+    ctx.stroke()
   }
 
   def renderRollHorizontalLines(): Unit = {
-    renderer.strokeStyle = PianoRollHorizontalRowColor
+    ctx.strokeStyle = PianoRollHorizontalRowColor
 
-    val numberOfNotes: Int = pRollCtrl.rollRange
+    val numberOfNotes: Int = pRollWorld.rollRange
     val stepSize: Int = MyMath.ceil(numberOfNotes, 30)
 
-    Iterator.range(pRollCtrl.rollLowNote, pRollCtrl.rollLowNote + numberOfNotes, stepSize).foreach(
+    Iterator.range(pRollWorld.rollLowNote, pRollWorld.rollLowNote + numberOfNotes).foreach(
       currentNote => {
 
         val y = heightPercentForNote(currentNote) * gridRect.height + gridRect.y
         if (Note.isBlackNote(currentNote)) {
-          renderer.fillStyle = PianoRollAltRowFillColor
-          renderer.fillRect(gridRect.x, y, gridRect.width, gridRect.height / numberOfNotes)
+          ctx.fillStyle = PianoRollAltRowFillColor
+          ctx.fillRect(gridRect.x, y, gridRect.width, gridRect.height / numberOfNotes)
         }
 
-        renderer.fillStyle = "#AABBCC"
-        renderer.font = "10pt Calibri"
-        renderer.fillText(Note.getLetter(currentNote), gridRect.x, y)
+        ctx.fillStyle = "#AABBCC"
+        ctx.font = "10pt Calibri"
+        ctx.fillText(Note.getLetter(currentNote), gridRect.x, y + gridRect.height / numberOfNotes)
 
-        renderer.beginPath()
-        renderer.moveTo(gridRect.x, y)
-        renderer.lineTo(gridRect.rightX, y)
-        renderer.stroke()
+        ctx.beginPath()
+        ctx.moveTo(gridRect.x, y)
+        ctx.lineTo(gridRect.rightX, y)
+        ctx.stroke()
       }
     )
   }
 
   def renderNotes(): Unit = {
-    val widthBeats = pRollCtrl.widthBeats
-    val startBeat = pRollCtrl.startBeat
+    val widthBeats = pRollWorld.widthBeats
+    val startBeat = pRollWorld.startBeat
     val endBeat = startBeat + widthBeats - 1
 
-    renderer.fillStyle = PianoRollNoteColor
-    pRollCtrl.notes.iterator(pRollCtrl.startBeat,
+    ctx.fillStyle = PianoRollNoteColor
+    pRollWorld.notes.iterator(pRollWorld.startBeat,
       endBeat).foreach(note => {
       renderNote(note)
     })
 
-    renderer.fillStyle = PianoRollEditingNoteColor
-    if(pRollCtrl.dirtyNote.isDefined){
-      renderNote(pRollCtrl.dirtyNote.get)
+    ctx.fillStyle = PianoRollEditingNoteColor
+    if(pRollWorld.dirtyNote.isDefined){
+      renderNote(pRollWorld.dirtyNote.get)
     }
   }
 
   def renderNote(note: Note): Unit ={
-    if(note.midi <= pRollCtrl.rollHighNote && note.midi >= pRollCtrl.rollHighNote - pRollCtrl.rollRange){
-      val xStart: Double = (note.beatPosition - pRollCtrl.startBeat) / pRollCtrl.widthBeats * gridRect.width + gridRect.x
+    if(note.midi <= pRollWorld.rollHighNote && note.midi >= pRollWorld.rollHighNote - pRollWorld.rollRange){
+      val xStart: Double = (note.beatPosition - pRollWorld.startBeat) / pRollWorld.widthBeats * gridRect.width + gridRect.x
       //val xEnd: Double = (note.endBeat-startBeat)/pianoRollContainer.widthBeats * gridRect.width + gridRect.x
-      val xWidth: Double = note.lengthInBeats / pRollCtrl.widthBeats * gridRect.width
+      val xWidth: Double = note.lengthInBeats / pRollWorld.widthBeats * gridRect.width
 
       val yStart: Double = heightPercentForNote(note.midi) * gridRect.height + gridRect.y
-      val yHeight: Double = gridRect.height / pRollCtrl.rollRange
+      val yHeight: Double = gridRect.height / pRollWorld.rollRange
 
 
-      renderer.fillRect(xStart, yStart, xWidth, yHeight)
+      ctx.fillRect(xStart, yStart, xWidth, yHeight)
     }
   }
 
-  def renderSettings() = {
-    renderer.fillStyle = PianoRollSettingsBackgroundColor
-    renderer.fillRect(settingsRect.x, settingsRect.y, settingsRect.width, settingsRect.height)
-  }
+//  def renderSettings() = {
+//    ctx.fillStyle = PianoRollSettingsBackgroundColor
+//    //renderer.fillRect(settingsRect.x, settingsRect.y, settingsRect.width, settingsRect.height)
+//    settingsRenderer.draw()
+//  }
 
   def renderLocator() = {
-    if(MyMath.within(pRollCtrl.locatorBeat, pRollCtrl.startBeat, pRollCtrl.startBeat + pRollCtrl.widthBeats)){
-      val x = getStartXForNote(pRollCtrl.locatorBeat)
+    if(MyMath.within(pRollWorld.locatorBeat, pRollWorld.startBeat, pRollWorld.startBeat + pRollWorld.widthBeats)){
+      val x = getStartXForNote(pRollWorld.locatorBeat)
       //log(s"Render locator $x")
-      renderer.strokeStyle = PianoRollLocatorColor
-      renderer.beginPath()
-      renderer.moveTo(x, playAreaRect.y)
-      renderer.lineTo(x, playAreaRect.bottomY)
-      renderer.stroke()
+      ctx.strokeStyle = PianoRollLocatorColor
+      ctx.beginPath()
+      ctx.moveTo(x, playAreaRect.y)
+      ctx.lineTo(x, playAreaRect.bottomY)
+      ctx.stroke()
     }
   }
 
 
   def heightPercentForNote(midi: Int,
-                           rollLow: Int = pRollCtrl.rollLowNote,
-                           rollRange: Int = pRollCtrl.rollRange): Double = {
+                           rollLow: Int = pRollWorld.rollLowNote,
+                           rollRange: Int = pRollWorld.rollRange): Double = {
     (rollRange - (midi - rollLow)).toDouble / rollRange
   }
 
   def getMidiAndBeatAtMouseClick(x: Double, y: Double) = {
-    val rollLow = pRollCtrl.rollLowNote
-    val rollRange = pRollCtrl.rollRange
+    val rollLow = pRollWorld.rollLowNote
+    val rollRange = pRollWorld.rollRange
     val yPercent = 1 - (y - gridRect.y)/gridRect.height
     val midi = Math.ceil(yPercent*rollRange+rollLow).toInt
 
-    val beat = (x - gridRect.x)/gridRect.width * pRollCtrl.widthBeats + pRollCtrl.startBeat
+    val beat = (x - gridRect.x)/gridRect.width * pRollWorld.widthBeats + pRollWorld.startBeat
     (midi, beat)
   }
 
   def getBeatAtMouseClick(x: Double) = {
-    (x - gridRect.x)/gridRect.width * pRollCtrl.widthBeats + pRollCtrl.startBeat
+    (x - gridRect.x)/gridRect.width * pRollWorld.widthBeats + pRollWorld.startBeat
   }
 
   //TODO: make this more efficient, only have to search bucket!
@@ -203,17 +218,17 @@ class PianoRollRenderer(pRollCtrl: PianoRollContainer, canvas: html.Canvas, rect
     Logger.debug(s"Midi $midi", getClass)
     Logger.debug(s"Beat $beat", getClass)
 
-    val noteIterator = pRollCtrl.notes.iterator(pRollCtrl.startBeat, pRollCtrl.startBeat + pRollCtrl.widthBeats)
+    val noteIterator = pRollWorld.notes.iterator(pRollWorld.startBeat, pRollWorld.startBeat + pRollWorld.widthBeats)
 
     //append the dirty note if necessary
     val modifiedIterator =
-      if(pRollCtrl.dirtyNote.isDefined) noteIterator ++ Iterable[Note](pRollCtrl.dirtyNote.get) else noteIterator
+      if(pRollWorld.dirtyNote.isDefined) noteIterator ++ Iterable[Note](pRollWorld.dirtyNote.get) else noteIterator
 
     modifiedIterator.find(Note.inNote(midi,beat,_))
   }
 
   def getStartXForNote(beat: Double) = {
-    (beat-pRollCtrl.startBeat)/pRollCtrl.widthBeats*gridRect.width + gridRect.x
+    (beat-pRollWorld.startBeat)/pRollWorld.widthBeats*gridRect.width + gridRect.x
   }
 
 }

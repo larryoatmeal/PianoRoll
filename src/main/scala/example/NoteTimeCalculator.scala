@@ -57,7 +57,7 @@ object NoteTimeCalculator{
 
   def getTimeOfBeat(beat: Double, song: Song) = {
     val bpmMarker = song.cumulativeBpmMarkers.find(beat < _.beatEnd).getOrElse(song.cumulativeBpmMarkers.last)
-    bpmMarker.startTime + deltaBeatsToDeltaTime(bpmMarker.bpm, beat)
+    bpmMarker.startTime + deltaBeatsToDeltaTime(bpmMarker.bpm, beat - bpmMarker.beatStart)
   }
 
   //TODO: examien this method

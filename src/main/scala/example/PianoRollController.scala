@@ -6,17 +6,22 @@ package example
 
 import PianoRollSettings._
 import example.audio.{AudioManager, NotePlayer, Synth}
+import MessageQueue._
 
-class PianoRollController(pianoRollContainer: PianoRollContainer, pianoRollRenderer: PianoRollRenderer) extends InputProcessor{
+import scala.scalajs.js
+
+class PianoRollController(pianoRollWorld: PianoRollWorld,
+                          pianoRollRenderer: PianoRollRenderer) extends InputProcessor
+                          with PlayerListener{
 
   var noteOffsetFromStartX = -1.0//difference between click and start of note
 
-  var settings = new PianoRollSettings()
-//  var synth = new Synth()
+  val notePlayer = new NotePlayer(pianoRollWorld)
+  notePlayer.registerPlayerListener(this)
 
-  val notePlayer = new NotePlayer(pianoRollContainer)
-
+  val settings = pianoRollWorld.settings
   val log = new Logger(this.getClass)
+  val messageQueue = pianoRollWorld.messageQueue
 
   override def onMouseDown(x: Double, y: Double): Unit = {
     super.onMouseDown(x, y)
@@ -25,47 +30,53 @@ class PianoRollController(pianoRollContainer: PianoRollContainer, pianoRollRende
       Logger.verbose(s"Piano grid touched $x, $y", this.getClass)
       val state = settings.state
 
-      if(state == StateSelect || state == StateEdit) {
-        val note = pianoRollRenderer.getNoteAtMouseClick(x, y)
-        if(note.isDefined) {
+      writeBackDirtyNote()
 
-          noteOffsetFromStartX = x - pianoRollRenderer.getStartXForNote(note.get.beatPosition)
-          Logger.debug(s"Offset $noteOffsetFromStartX", getClass)
-          pianoRollContainer.deleteNote(note.get)
-        }
-        //set dirty note to new dirty note
-        pianoRollContainer.dirtyNote = note
-
+      val note = pianoRollRenderer.getNoteAtMouseClick(x, y)
+      if(note.isDefined) {
+        noteOffsetFromStartX = x - pianoRollRenderer.getStartXForNote(note.get.beatPosition)
+        Logger.debug(s"Offset $noteOffsetFromStartX", getClass)
+        pianoRollWorld.deleteNote(note.get)
+        pianoRollWorld.dirtyNote = note
       }
-      else if(state == StateAdd) {
-        val (midi, beat) = pianoRollRenderer.getMidiAndBeatAtMouseClick(x ,y)
-        val newNote = new Note(midi, beat, 0.1)
+      else{
 
-        pianoRollContainer.dirtyNote = Some(newNote)
+        if(state == StatePencil) {//if adding note, create new note
+          val (midi, beat) = pianoRollRenderer.getMidiAndBeatAtMouseClick(x ,y)
+          val newNote = new Note(midi, beat, 0.1)
+
+          pianoRollWorld.dirtyNote = Some(newNote)
+        }
       }
     }
-    else if(pianoRollRenderer.rulerRect.containsPoint(x, y)){
+    else if(pianoRollRenderer.rulerRect.containsPoint(x, y)) {
       Logger.verbose(s"Piano ruler touched $x, $y", this.getClass)
-      pianoRollContainer.locatorBeat = pianoRollRenderer.getBeatAtMouseClick(x)
-      log(s"Locator beat: ${pianoRollContainer.locatorBeat}")
+      pianoRollWorld.locatorBeat = pianoRollRenderer.getBeatAtMouseClick(x)
+      log(s"Locator beat: ${pianoRollWorld.locatorBeat}")
 
+      if (notePlayer.isPlaying) {
+        notePlayer.setPlayPoint(pianoRollWorld.locatorBeat, AudioManager.audio.currentTime)
+      }
 
-    }else{
+    }
+    else{
       Logger.verbose(s"Untouchable region touched $x, $y", this.getClass)
+    }
+    if(pianoRollRenderer.menuRect.containsPoint(x, y)){
+      pianoRollRenderer.menuRenderer.onClick(x, y)
     }
   }
 
   override def onDrag(x: Double, y: Double, mouseDownX: Double, mouseDownY: Double): Unit = {
     if(pianoRollRenderer.gridRect.containsPoint(x, y)){
-
       if(settings.state == StateSelect){
         val adjustedX = x - noteOffsetFromStartX
         val (midi, beat) = pianoRollRenderer.getMidiAndBeatAtMouseClick(adjustedX, y)
-        pianoRollContainer.dirtyNote = pianoRollContainer.dirtyNote.map(note => new Note(midi, beat, note.lengthInBeats))
+        pianoRollWorld.dirtyNote = pianoRollWorld.dirtyNote.map(note => new Note(midi, beat, note.lengthInBeats))
       }
-      else if(settings.state == StateEdit || settings.state == StateAdd){//drag to change length
+      else if(settings.state == StatePencil){//drag to change length
         val (midi, beat) = pianoRollRenderer.getMidiAndBeatAtMouseClick(x, y)
-        pianoRollContainer.dirtyNote = pianoRollContainer.dirtyNote.map(note => {
+        pianoRollWorld.dirtyNote = pianoRollWorld.dirtyNote.map(note => {
           val minDuration = 0.001
           val newDuration = Math.max(beat - note.beatPosition, minDuration)
           new Note(note.midi, note.beatPosition, newDuration)
@@ -76,35 +87,70 @@ class PianoRollController(pianoRollContainer: PianoRollContainer, pianoRollRende
 
   override def onKey(keyCode: Int): Unit = {
     keyCode match{
-      case KeyCode.LEFT => pianoRollContainer.shiftBeat(right = false)
-      case KeyCode.RIGHT => pianoRollContainer.shiftBeat(right = true)
-      case KeyCode.UP => pianoRollContainer.shiftRoll(up = true)
-      case KeyCode.DOWN => pianoRollContainer.shiftRoll(up = false)
+      case KeyCode.LEFT => pianoRollWorld.shiftBeat(right = false)
+      case KeyCode.RIGHT => pianoRollWorld.shiftBeat(right = true)
+      case KeyCode.UP => pianoRollWorld.shiftRoll(up = true)
+      case KeyCode.DOWN => pianoRollWorld.shiftRoll(up = false)
       case KeyCode.X => if(settings.state == StateSelect){
         //delete note if selected, and reset dirty
-        pianoRollContainer.dirtyNote.foreach(pianoRollContainer.deleteNote)
-        pianoRollContainer.dirtyNote = None
+        pianoRollWorld.dirtyNote.foreach(pianoRollWorld.deleteNote)
+        pianoRollWorld.dirtyNote = None
       }
-      case KeyCode.S => settings.state = StateSelect
-      case KeyCode.E => settings.state = StateEdit
-      case KeyCode.A => settings.state = StateAdd
-      case KeyCode.C => pianoRollContainer.notes.empty()
-//      case KeyCode.P => synth.play()
+      case KeyCode.S => {
+        settings.state = StateSelect
+        writeBackDirtyNote()
+        pianoRollRenderer.menuRenderer.selectToolExternal(MessageQueue.TOOL_SELECT)
+      }
+      //case KeyCode.E => settings.state = StateEdit
       case KeyCode.P => {
-        notePlayer.prepare()
-        notePlayer.setPlayPoint(0, AudioManager.audio.currentTime)
+        settings.state = StatePencil
+        writeBackDirtyNote()
+        pianoRollRenderer.menuRenderer.selectToolExternal(MessageQueue.TOOL_PENCIL)
+
+      }
+      case KeyCode.C => pianoRollWorld.notes.empty()
+//      case KeyCode.P => synth.play()
+      case KeyCode.SPACE => {
+        if(notePlayer.isPlaying){
+          stopMusic()
+          //eek: find better way to do this
+          pianoRollRenderer.menuRenderer.playPauseButton.toggle()
+        }else{
+          playMusic()
+          pianoRollRenderer.menuRenderer.playPauseButton.toggle()
+        }
+      }
+      case KeyCode.BACKSPACE => {
+        //pianoRollWorld.dirtyNote.foreach(note => pianoRollWorld.deleteNote(note))
+        pianoRollWorld.dirtyNote = None
       }
       case _ =>
     }
   }
 
+  def writeBackDirtyNote(): Unit = {
+    pianoRollWorld.dirtyNote.foreach(note => pianoRollWorld.addNote(note))
+    pianoRollWorld.dirtyNote = None
+  }
+
+  def playMusic(): Unit ={
+    log("Start music")
+    notePlayer.prepare()
+    notePlayer.setPlayPoint(pianoRollWorld.locatorBeat, AudioManager.audio.currentTime)
+  }
+
+  def stopMusic(): Unit ={
+    log("Stop music")
+    notePlayer.stop()
+  }
+
   override def onKeyWithShift(keyCode: Int): Unit = {
     keyCode match{
-      case KeyCode.LEFT => pianoRollContainer.zoomOut(PianoRollController.Zoom)
-      case KeyCode.RIGHT => pianoRollContainer.zoomIn(PianoRollController.Zoom)
-      case KeyCode.UP => pianoRollContainer.zoomInRoll(PianoRollController.Zoom)
-      case KeyCode.DOWN => pianoRollContainer.zoomOutRoll(PianoRollController.Zoom)
-      case KeyCode.P => notePlayer.stop()
+      case KeyCode.LEFT => pianoRollWorld.zoomOut(PianoRollController.Zoom)
+      case KeyCode.RIGHT => pianoRollWorld.zoomIn(PianoRollController.Zoom)
+      case KeyCode.UP => pianoRollWorld.zoomInRoll(PianoRollController.Zoom)
+      case KeyCode.DOWN => pianoRollWorld.zoomOutRoll(PianoRollController.Zoom)
+      case KeyCode.P => stopMusic()
 
       case _ => 
     }
@@ -112,12 +158,50 @@ class PianoRollController(pianoRollContainer: PianoRollContainer, pianoRollRende
 
   override def onMouseUp(x: Double, y: Double): Unit = {
     super.onMouseUp(x , y)
-    pianoRollContainer.dirtyNote.foreach(note => pianoRollContainer.addNote(note))
+    //writeBackDirtyNote()
   }
+
+  override def onEnd(): Unit = pianoRollWorld.locatorBeat = 0.0
+
+  override def onBeatChanged(beat: Double): Unit = {
+    pianoRollWorld.locatorBeat = beat
+    if(pianoRollWorld.locatorBeat > pianoRollWorld.endBeat){
+      pianoRollWorld.safeSetBeat(pianoRollWorld.endBeat - PianoRollController.LocatorFollowOffset)
+    }
+  }
+
+  def processMessages(): Unit ={
+    while(!messageQueue.isEmpty){
+      val message = messageQueue.read()
+      log(s"Message $message received")
+      message match{
+        case PLAY => playMusic()
+        case STOP => stopMusic()
+        case TOOL_PENCIL => {
+          settings.state = StatePencil
+          writeBackDirtyNote()
+
+        }
+        case TOOL_SELECT => {
+          settings.state = StateSelect
+          writeBackDirtyNote()
+        }
+        case HELP => {
+          js.Dynamic.global.showHelpModal()
+
+
+        }
+        case _ =>
+      }
+    }
+  }
+
+
 
 }
 
 object PianoRollController{
   val HorizontalStepSize = PianoRollConfig.BeatResolution/4//quarter
   val Zoom = 1.5
+  val LocatorFollowOffset = PianoRollConfig.BeatResolution/16.0 //sixteenth
 }
