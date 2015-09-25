@@ -1,0 +1,20 @@
+[0m[[0minfo[0m] [0mFull Optimizing /Users/Larry/Programming/Scalajs/workbench-example-app/target/scala-2.11/example-opt.js[0m
+[0m[[0mdebug[0m] [0mLinker: Read info: 1053064 us[0m
+[0m[[0mdebug[0m] [0mLinker: Compute reachability: 444036 us[0m
+[0m[[0mdebug[0m] [0mLinker: Assemble LinkedClasses: 922471 us[0m
+[0m[[0mdebug[0m] [0mLinker: cache stats: reused: 0 -- invalidated: 4046 -- trees read: 566[0m
+[0m[[0mdebug[0m] [0mLinker: 2501050 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Batch mode: true[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Incremental part: 624324 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Optimizing 3868 methods.[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Optimizer part: 1943359 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: 2645453 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Compute reachability: 205980 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Assemble LinkedClasses: 37372 us[0m
+[0m[[0mdebug[0m] [0mRefiner: 251084 us[0m
+[0m[[0mdebug[0m] [0mEmitter: Class tree cache stats: reused: 0 -- invalidated: 433[0m
+[0m[[0mdebug[0m] [0mEmitter: Method tree cache stats: resued: 0 -- invalidated: 1909[0m
+[0m[[0mdebug[0m] [0mEmitter (write output): 1355323 us[0m
+[0m[[0minfo[0m] [0mClosure: 0 error(s), 0 warning(s)[0m
+[0m[[0mdebug[0m] [0mClosure: Compiler pass: 11085418 us[0m
+[0m[[0mdebug[0m] [0mClosure: Write result: 862886 us[0m

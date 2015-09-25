@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+  <title>Example Scala.js application</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body style="margin: 0px; width:100%; height:100%;">
+
+<div style="height:100%">
+    <canvas style="display: block" id="canvas"></canvas>
+</div>
+
+<script type="text/javascript" src="scripts/HelpModal.js"></script>
+<!--<script type="text/javascript" src="scripts/AudioContextFixer.js"></script>-->
+<!--<script type="text/javascript" src="https://code.createjs.com/createjs-2015.05.21.min.js"></script>-->
+<script type="text/javascript" src="../example-fastopt.js"></script>
+<script type="text/javascript" src="/workbench.js"></script>
+<script>
+    example.ScalaJSExample().main(document.getElementById('canvas'));
+</script>
+
+
+<!-- Modal -->
+<div id="helpModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Piano Roll Help</h4>
+            </div>
+            <div class="modal-body">
+                <p>This is a web based "piano roll" that allows you to create music by adding and editing notes graphically</p>
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Button/Shortcut</th>
+                        <th>Function</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Space</td>
+                        <td>Play/Pause</td>
+                    </tr>
+                    <tr>
+                        <td>Left/Right/Up/Down arrows</td>
+                        <td>Navigation</td>
+                    </tr>
+                    <tr>
+                        <td>Shift + Left/Right/Up/Down</td>
+                        <td>Zomm In/Out Horizontally/Vertically</td>
+                    </tr>
+                    <tr>
+                        <td>S (or pointer icon)</td>
+                        <td>Select and move notes</td>
+                    </tr>
+                    <tr>
+                        <td>P (or pencil tool)</td>
+                        <td>Add/edit notes. Click to add a note and drag while holding to edit note length</td>
+                    </tr>
+                        <td>Delete</td>
+                        <td>Deletes the selected note</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+
+                <p>Created by Larry Wang</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="webAudioApiErrorModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Browser not supported</h4>
+            </div>
+            <div class="modal-body">
+                <p>Unfortunately, this browser does not support the necessary Web Audio API features.
+                    Google Chrome is recommended for best performance. Firefox works but with lower sound quality.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="chromeRecommendedModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Google Chrome recommended</h4>
+            </div>
+            <div class="modal-body">
+                <p>Although this app will work on your browser, the audio quality may be inferior. Google Chrome is
+                recommended</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
