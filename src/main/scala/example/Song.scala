@@ -1,5 +1,7 @@
 package example
 
+import scala.collection.mutable.ArrayBuffer
+import scala.scalajs.js
 import scala.util.Random
 
 /**
@@ -160,6 +162,27 @@ object Song{
   val demoSong = Song(demoOneNumMeasures, arpeggio, Vector(new BPMChange(0, 120)), demoOneMeterChanges)
 
   val demoSong2 =demoSong
+
+  val g = js.Dynamic.global
+
+
+  val midterm = g.midterm
+
+  val trackData: Array[Vector[Note]] = midterm.asInstanceOf[js.Array[js.Array[js.Dynamic]]].map{
+    track: js.Array[js.Dynamic] => {
+      track.map{
+        note: js.Dynamic => {
+          val midi = note.midi.asInstanceOf[Int]
+          val startBeat = note.startBeat.asInstanceOf[Double]
+          val duration = note.duration.asInstanceOf[Double]
+          new Note(midi, startBeat, duration)
+        }
+      }.toArray.toVector
+    }
+  }.toArray
+
+  Logger.debug(trackData.toString, this.getClass)
+
 
   def randomNote(): Note = {
     new Note(Random.nextInt(20)+50, Random.nextInt(16 * 200)/4 * 4, 8)

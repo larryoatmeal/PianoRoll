@@ -18,62 +18,60 @@ case class BooleanWrapper(var isTrue: Boolean)
 class Synth {
   val log = new Logger(this)
 
-  val gainNode = audio.createGain()
+  // val gainNode = audio.createGain()
 
-  val oscillator: OscillatorNode = audio.createOscillator()
-  oscillator.connect(gainNode)
-  oscillator.`type` = "triangle"
-  gainNode.connect(audio.destination)
-  val polyphony = 32
+  // val oscillator: OscillatorNode = audio.createOscillator()
+  // oscillator.connect(gainNode)
+  // oscillator.`type` = "triangle"
+  // gainNode.connect(audio.destination)
+  // val polyphony = 32
 
-  val oscillators: IndexedSeq[(OscillatorNode, GainNode, BooleanWrapper)] = (1 to 5).map(
-    i => {
-      val gainNode = audio.createGain()
-      val oscillator: OscillatorNode = audio.createOscillator()
-      oscillator.connect(gainNode)
-      oscillator.`type` = "triangle"
-      gainNode.connect(audio.destination)
-      oscillator.start()
-      gainNode.gain.value = 0.0
-      (oscillator, gainNode, BooleanWrapper(true))
-    }
-  )
-
+  // val oscillators: IndexedSeq[(OscillatorNode, GainNode, BooleanWrapper)] = (1 to 5).map(
+  //   i => {
+  //     val gainNode = audio.createGain()
+  //     val oscillator: OscillatorNode = audio.createOscillator()
+  //     oscillator.connect(gainNode)
+  //     oscillator.`type` = "triangle"
+  //     gainNode.connect(audio.destination)
+  //     oscillator.start()
+  //     gainNode.gain.value = 0.0
+  //     (oscillator, gainNode, BooleanWrapper(true))
+  //   }
+  // )
 
   //polyphonic 
-  def polyphonicPlay(note: Note, start: Double, end: Double) = {
-    var i = 0
-    var continue = true
+  // def polyphonicPlay(note: Note, start: Double, end: Double) = {
+  //   var i = 0
+  //   var continue = true
 
-    if(start > 0 && end > 0){
-      while(i < oscillators.length && continue){
-        val (oscillator, gainNode, free) = oscillators(i)
+  //   if(start > 0 && end > 0){
+  //     while(i < oscillators.length && continue){
+  //       val (oscillator, gainNode, free) = oscillators(i)
 
-        if(free.isTrue){
-          log(s"Voice $i")
-          //start
+  //       if(free.isTrue){
+  //         log(s"Voice $i")
+  //         //start
 
-          oscillator.frequency.setValueAtTime(Math.pow(2.0, (note.midi-69)/12.0)*440.0, start)
-          gainNode.gain.setTargetAtTime(0.5, start, 0.01)
-          //stop
-          gainNode.gain.setTargetAtTime(0, end, 0.01)
+  //         oscillator.frequency.setValueAtTime(Math.pow(2.0, (note.midi-69)/12.0)*440.0, start)
+  //         gainNode.gain.setTargetAtTime(0.5, start, 0.01)
+  //         //stop
+  //         gainNode.gain.setTargetAtTime(0, end, 0.01)
 
-          //break out of loop
-          free.isTrue = false
-          dom.setTimeout(()=>{free.isTrue = true}, (end - start) * 1000)
-          continue = false
-        }
-        i = i + 1
-      }
-    }
-  }
+  //         //break out of loop
+  //         free.isTrue = false
+  //         dom.setTimeout(()=>{free.isTrue = true}, (end - start) * 1000)
+  //         continue = false
+  //       }
+  //       i = i + 1
+  //     }
+  //   }
+  // }
 
 //  val oscillators = mutable.HashMap[(Int, Int), OscillatorNode]
 
   def secondsToTimeConstant(sec: Double): Double = sec / 5.0
 
   val oscList = ArrayBuffer[OscillatorNode]()
-
 
   def generateOsc(note: Note, start: Double, end: Double, shape: String, gain: Double, asdr: ASDR = standardASDR, detune: Double = 0): Unit ={
     val oscillator: OscillatorNode = audio.createOscillator()
@@ -124,31 +122,41 @@ class Synth {
   }
 
 
-  def polyphonicPlay(note: Note, when: Double): Unit = {
-//    log(s"Playing $note")
-//    log(s"At time $when")
-//    log(s"Current time ${AudioManager.audio.currentTime}")
-//    log(s"Delta time ${when - AudioManager.audio.currentTime}")
+//   def polyphonicPlay(note: Note, when: Double): Unit = {
+// //    log(s"Playing $note")
+// //    log(s"At time $when")
+// //    log(s"Current time ${AudioManager.audio.currentTime}")
+// //    log(s"Delta time ${when - AudioManager.audio.currentTime}")
 
-    if(when >= 0){
-      oscillator.frequency.setValueAtTime(Math.pow(2.0, (note.midi-69)/12.0)*440.0, when)
-      gainNode.gain.setTargetAtTime(0.5, when, 0.1)
-    }else{
-      log.error(s"Time $when is negative")
-    }
-  }
+//     if(when >= 0){
+//       oscillator.frequency.setValueAtTime(Math.pow(2.0, (note.midi-69)/12.0)*440.0, when)
+//       gainNode.gain.setTargetAtTime(0.5, when, 0.1)
+//     }else{
+//       log.error(s"Time $when is negative")
+//     }
+//   }
 
-  def stop(when: Double): Unit = {
-    if(when >= 0){
-      gainNode.gain.setTargetAtTime(0, when, 0.1)
-    } else{
-      log.error(s"Time $when is negative")
-    }
-    //oscillator = null
-  }
+  // def stop(when: Double): Unit = {
+  //   if(when >= 0){
+  //     gainNode.gain.setTargetAtTime(0, when, 0.1)
+  //   } else{
+  //     log.error(s"Time $when is negative")
+  //   }
+  //   //oscillator = null
+  // }
   
   def stopAll(): Unit = {
 //    oscillators.foreach(osc => osc._2.gain.value = 0)
-    oscList.foreach{_.stop(0)}
+    oscList.foreach{
+      osc =>
+      try{
+        osc.stop(0)
+      }catch{
+        case e: Exception => {
+          0
+        }
+      }
+    }
+    oscList.clear()
   }
 }

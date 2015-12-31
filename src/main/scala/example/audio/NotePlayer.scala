@@ -49,6 +49,9 @@ class NotePlayer(pRollWorld: PianoRollWorld) {
       track => track.notes.sort()
     }
   }
+  def setUpChannels(): Unit = {
+
+  }
 
   class IteratorWithPeek[T](val iterator: Iterator[T], val nullHolder: T){
     var dirty = nullHolder
@@ -74,13 +77,6 @@ class NotePlayer(pRollWorld: PianoRollWorld) {
       temp
     }
   }
-
-
-
-
-
-
-
 
   def setPlayPoint(beat: Double, absTime: Double): Unit ={
     stop()//to reset

@@ -25,6 +25,22 @@ object ScalaJSExample {
     inputManager = new HTML5InputManager(canvas)
     container = new PianoRollWorld(Song.starterSong)
 
+    Song.trackData.zipWithIndex.foreach{
+      case (notes, index) =>{
+        if(index == 0) {
+          container.trackSelected(2)
+        }
+        else if(index == 2) {
+          container.trackSelected(0)
+        }else {
+          container.trackSelected(index)
+        }
+        notes.foreach{
+          note => container.addNote(note)
+        }
+      }
+    }
+
     canvas.width = canvas.parentElement.clientWidth
     canvas.height = canvas.parentElement.clientHeight
 
