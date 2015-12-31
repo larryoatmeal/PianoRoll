@@ -1258,7 +1258,13 @@ function $c_Lexample_KeyCode$() {
   this.Y$1 = 0;
   this.Z$1 = 0;
   this.BACKSPACE$1 = 0;
-  this.SPACE$1 = 0
+  this.SPACE$1 = 0;
+  this.one$1 = 0;
+  this.two$1 = 0;
+  this.three$1 = 0;
+  this.four$1 = 0;
+  this.five$1 = 0;
+  this.six$1 = 0
 }
 $c_Lexample_KeyCode$.prototype = new $h_O();
 $c_Lexample_KeyCode$.prototype.constructor = $c_Lexample_KeyCode$;
@@ -1301,6 +1307,12 @@ $c_Lexample_KeyCode$.prototype.init___ = (function() {
   this.Z$1 = 91;
   this.BACKSPACE$1 = 8;
   this.SPACE$1 = 32;
+  this.one$1 = 49;
+  this.two$1 = 50;
+  this.three$1 = 51;
+  this.four$1 = 52;
+  this.five$1 = 53;
+  this.six$1 = 54;
   return this
 });
 var $d_Lexample_KeyCode$ = new $TypeData().initClass({
@@ -3153,6 +3165,7 @@ function $c_Lexample_audio_NotePlayer() {
   this.song$1 = null;
   this.tracks$1 = null;
   this.log$1 = null;
+  this.synth$1 = null;
   this.playerListeners$1 = null;
   this.songStartPositionTime$1 = 0.0;
   this.absStartTime$1 = 0.0;
@@ -3259,6 +3272,7 @@ $c_Lexample_audio_NotePlayer.prototype.init___Lexample_PianoRollWorld = (functio
   this.song$1 = pRollWorld.song$1;
   this.tracks$1 = pRollWorld.tracks$1.tracks$1;
   this.log$1 = new $c_Lexample_Logger().init___O(this);
+  this.synth$1 = new $c_Lexample_audio_Synth().init___();
   this.playerListeners$1 = new $c_scm_ArrayBuffer().init___();
   this.songStartPositionTime$1 = 0.0;
   this.absStartTime$1 = 0.0;
@@ -3277,15 +3291,11 @@ $c_Lexample_audio_NotePlayer.prototype.stop__V = (function() {
     $g["clearInterval"](this.intervalHandle$1)
   };
   this.intervalHandle$1 = (-1);
-  this.g$1["stopAll"]()
+  this.synth$1.stopAll__V()
 });
 $c_Lexample_audio_NotePlayer.prototype.playNote__Lexample_Note__D__I__V = (function(note, time, channel) {
   var endTime = (($m_Lexample_NoteTimeCalculator$().getTimeOfBeat__D__Lexample_Song__D(note.endBeat$1, this.song$1) - this.songStartPositionTime$1) + this.absStartTime$1);
-  var jsx$1 = this.g$1;
-  var value = note.midi$1;
-  var value$1 = (time - $uD($m_Lexample_audio_AudioManager$().audio$1["currentTime"]));
-  var value$2 = (endTime - $uD($m_Lexample_audio_AudioManager$().audio$1["currentTime"]));
-  jsx$1["playNote"](channel, value, value$1, value$2)
+  this.synth$1.playNote__I__Lexample_Note__D__D__V(channel, note, time, endTime)
 });
 $c_Lexample_audio_NotePlayer.prototype.setPlayPoint__D__D__V = (function(beat, absTime) {
   this.stop__V();
@@ -3395,6 +3405,132 @@ var $d_Lexample_audio_NotePlayer$IteratorWithPeek = new $TypeData().initClass({
   O: 1
 });
 $c_Lexample_audio_NotePlayer$IteratorWithPeek.prototype.$classData = $d_Lexample_audio_NotePlayer$IteratorWithPeek;
+/** @constructor */
+function $c_Lexample_audio_Synth() {
+  $c_O.call(this);
+  this.log$1 = null;
+  this.gainNode$1 = null;
+  this.oscillator$1 = null;
+  this.polyphony$1 = 0;
+  this.oscillators$1 = null;
+  this.oscList$1 = null;
+  this.standardASDR$1 = null;
+  this.ASDR$module$1 = null
+}
+$c_Lexample_audio_Synth.prototype = new $h_O();
+$c_Lexample_audio_Synth.prototype.constructor = $c_Lexample_audio_Synth;
+/** @constructor */
+function $h_Lexample_audio_Synth() {
+  /*<skip>*/
+}
+$h_Lexample_audio_Synth.prototype = $c_Lexample_audio_Synth.prototype;
+$c_Lexample_audio_Synth.prototype.init___ = (function() {
+  this.log$1 = new $c_Lexample_Logger().init___O(this);
+  this.gainNode$1 = $m_Lexample_audio_AudioManager$().audio$1["createGain"]();
+  this.oscillator$1 = $m_Lexample_audio_AudioManager$().audio$1["createOscillator"]();
+  this.oscillator$1["connect"](this.gainNode$1);
+  this.oscillator$1["type"] = "triangle";
+  this.gainNode$1["connect"]($m_Lexample_audio_AudioManager$().audio$1["destination"]);
+  this.polyphony$1 = 32;
+  $m_sci_IndexedSeq$();
+  $m_sc_IndexedSeq$();
+  $m_sci_IndexedSeq$();
+  $m_sci_Vector$();
+  var b$1 = new $c_sci_VectorBuilder().init___();
+  var i = 1;
+  var count = 0;
+  while ((i !== 6)) {
+    var arg1 = i;
+    var gainNode = $m_Lexample_audio_AudioManager$().audio$1["createGain"]();
+    var oscillator = $m_Lexample_audio_AudioManager$().audio$1["createOscillator"]();
+    oscillator["connect"](gainNode);
+    oscillator["type"] = "triangle";
+    gainNode["connect"]($m_Lexample_audio_AudioManager$().audio$1["destination"]);
+    oscillator["start"]();
+    gainNode["gain"]["value"] = 0.0;
+    var elem = new $c_T3().init___O__O__O(oscillator, gainNode, new $c_Lexample_audio_BooleanWrapper().init___Z(true));
+    b$1.$$plus$eq__O__sci_VectorBuilder(elem);
+    count = ((1 + count) | 0);
+    i = ((1 + i) | 0)
+  };
+  this.oscillators$1 = b$1.result__sci_Vector();
+  this.oscList$1 = $as_scm_ArrayBuffer($m_scm_ArrayBuffer$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$()));
+  this.standardASDR$1 = new $c_Lexample_audio_Synth$ASDR().init___Lexample_audio_Synth__D__D__D__D(this, 0.1, 0.8, 0.2, 0.1);
+  return this
+});
+$c_Lexample_audio_Synth.prototype.playNote__I__Lexample_Note__D__D__V = (function(channel, note, start, end) {
+  if ((channel === 0)) {
+    this.generateOsc__Lexample_Note__D__D__T__D__Lexample_audio_Synth$ASDR__D__V(note, start, end, "triangle", 0.5, new $c_Lexample_audio_Synth$ASDR().init___Lexample_audio_Synth__D__D__D__D(this, 0.05, 0.01, 2.0, 0.1), 0.0);
+    this.generateOsc__Lexample_Note__D__D__T__D__Lexample_audio_Synth$ASDR__D__V(note, start, end, "square", 0.5, new $c_Lexample_audio_Synth$ASDR().init___Lexample_audio_Synth__D__D__D__D(this, 0.05, 0.01, 2.0, 0.1), 0.0)
+  } else if ((channel === 1)) {
+    this.generateOsc__Lexample_Note__D__D__T__D__Lexample_audio_Synth$ASDR__D__V(note, start, end, "sawtooth", 0.3, new $c_Lexample_audio_Synth$ASDR().init___Lexample_audio_Synth__D__D__D__D(this, 0.2, 0.9, 1.0, 0.1), 0.0);
+    this.generateOsc__Lexample_Note__D__D__T__D__Lexample_audio_Synth$ASDR__D__V(note, start, end, "sine", 0.5, new $c_Lexample_audio_Synth$ASDR().init___Lexample_audio_Synth__D__D__D__D(this, 0.2, 0.9, 1.0, 0.1), 0.0)
+  } else if ((channel === 2)) {
+    this.generateOsc__Lexample_Note__D__D__T__D__Lexample_audio_Synth$ASDR__D__V(note, start, end, "sawtooth", 0.5, new $c_Lexample_audio_Synth$ASDR().init___Lexample_audio_Synth__D__D__D__D(this, 0.1, 0.9, 1.0, 0.1), 0.0);
+    this.generateOsc__Lexample_Note__D__D__T__D__Lexample_audio_Synth$ASDR__D__V(note, start, end, "sawtooth", 0.5, new $c_Lexample_audio_Synth$ASDR().init___Lexample_audio_Synth__D__D__D__D(this, 0.1, 0.9, 1.0, 0.1), 0.1)
+  } else if ((channel === 3)) {
+    this.generateOsc__Lexample_Note__D__D__T__D__Lexample_audio_Synth$ASDR__D__V(note, start, end, "sine", 0.5, new $c_Lexample_audio_Synth$ASDR().init___Lexample_audio_Synth__D__D__D__D(this, 0.1, 0.9, 1.0, 0.1), 0.1)
+  } else {
+    this.generateOsc__Lexample_Note__D__D__T__D__Lexample_audio_Synth$ASDR__D__V(note, start, end, "square", 0.5, new $c_Lexample_audio_Synth$ASDR().init___Lexample_audio_Synth__D__D__D__D(this, 0.1, 0.4, 1.0, 0.1), 0.0)
+  }
+});
+$c_Lexample_audio_Synth.prototype.generateOsc__Lexample_Note__D__D__T__D__Lexample_audio_Synth$ASDR__D__V = (function(note, start, end, shape, gain, asdr, detune) {
+  var oscillator = $m_Lexample_audio_AudioManager$().audio$1["createOscillator"]();
+  var b = (((-69.0) + (note.midi$1 + detune)) / 12.0);
+  var pitch = (440.0 * $uD($g["Math"]["pow"](2.0, b)));
+  oscillator["frequency"]["value"] = pitch;
+  oscillator["type"] = shape;
+  var gainNode = $m_Lexample_audio_AudioManager$().audio$1["createGain"]();
+  gainNode["gain"]["value"] = 0.0;
+  gainNode["gain"]["setTargetAtTime"](gain, start, this.secondsToTimeConstant__D__D(asdr.a$1));
+  gainNode["gain"]["setTargetAtTime"]((asdr.s$1 * gain), (start + asdr.a$1), this.secondsToTimeConstant__D__D(asdr.d$1));
+  gainNode["gain"]["setTargetAtTime"](0.0, end, this.secondsToTimeConstant__D__D(asdr.r$1));
+  oscillator["connect"](gainNode);
+  gainNode["connect"]($m_Lexample_audio_AudioManager$().audio$1["destination"]);
+  oscillator["start"](start);
+  oscillator["stop"]((end + asdr.r$1));
+  var this$2 = this.oscList$1;
+  var array = [oscillator];
+  var n = $uI(array["length"]);
+  var n$1 = ((this$2.size0$6 + n) | 0);
+  $s_scm_ResizableArray$class__ensureSize__scm_ResizableArray__I__V(this$2, n$1);
+  var xs = this$2.array$6;
+  var start$1 = this$2.size0$6;
+  var i = 0;
+  var j = start$1;
+  var $$this = $uI(array["length"]);
+  var $$this$1 = (($$this < n) ? $$this : n);
+  var that = ((xs.u["length"] - start$1) | 0);
+  var end$1 = (($$this$1 < that) ? $$this$1 : that);
+  while ((i < end$1)) {
+    var jsx$1 = j;
+    var index = i;
+    xs.u[jsx$1] = array[index];
+    i = ((1 + i) | 0);
+    j = ((1 + j) | 0)
+  };
+  this$2.size0$6 = ((this$2.size0$6 + n) | 0)
+});
+$c_Lexample_audio_Synth.prototype.stopAll__V = (function() {
+  var this$1 = this.oscList$1;
+  var i = 0;
+  var top = this$1.size0$6;
+  while ((i < top)) {
+    var arg1 = this$1.array$6.u[i];
+    arg1["stop"](0.0);
+    i = ((1 + i) | 0)
+  }
+});
+$c_Lexample_audio_Synth.prototype.secondsToTimeConstant__D__D = (function(sec) {
+  return (sec / 5.0)
+});
+var $d_Lexample_audio_Synth = new $TypeData().initClass({
+  Lexample_audio_Synth: 0
+}, false, "example.audio.Synth", {
+  Lexample_audio_Synth: 1,
+  O: 1
+});
+$c_Lexample_audio_Synth.prototype.$classData = $d_Lexample_audio_Synth;
 /** @constructor */
 function $c_jl_Character$() {
   $c_O.call(this);
@@ -8913,6 +9049,31 @@ $c_Lexample_PianoRollController.prototype.onKey__I__V = (function(keyCode) {
     }
   } else if (($m_Lexample_KeyCode$().BACKSPACE$1 === keyCode)) {
     this.example$PianoRollController$$pianoRollWorld$f.dirtyNote$1 = $m_s_None$()
+  } else if (($m_Lexample_KeyCode$().one$1 === keyCode)) {
+    this.writeBackDirtyNote__V();
+    var this$5 = this.example$PianoRollController$$pianoRollWorld$f;
+    this$5.tracks$1.setTrack__I__V(0);
+    this.pianoRollRenderer$1.menuRenderer$1.selectInstrumentExternal__I__V(0)
+  } else if (($m_Lexample_KeyCode$().two$1 === keyCode)) {
+    this.writeBackDirtyNote__V();
+    var this$6 = this.example$PianoRollController$$pianoRollWorld$f;
+    this$6.tracks$1.setTrack__I__V(1);
+    this.pianoRollRenderer$1.menuRenderer$1.selectInstrumentExternal__I__V(1)
+  } else if (($m_Lexample_KeyCode$().three$1 === keyCode)) {
+    this.writeBackDirtyNote__V();
+    var this$7 = this.example$PianoRollController$$pianoRollWorld$f;
+    this$7.tracks$1.setTrack__I__V(2);
+    this.pianoRollRenderer$1.menuRenderer$1.selectInstrumentExternal__I__V(2)
+  } else if (($m_Lexample_KeyCode$().four$1 === keyCode)) {
+    this.writeBackDirtyNote__V();
+    var this$8 = this.example$PianoRollController$$pianoRollWorld$f;
+    this$8.tracks$1.setTrack__I__V(3);
+    this.pianoRollRenderer$1.menuRenderer$1.selectInstrumentExternal__I__V(3)
+  } else if (($m_Lexample_KeyCode$().five$1 === keyCode)) {
+    this.writeBackDirtyNote__V();
+    var this$9 = this.example$PianoRollController$$pianoRollWorld$f;
+    this$9.tracks$1.setTrack__I__V(4);
+    this.pianoRollRenderer$1.menuRenderer$1.selectInstrumentExternal__I__V(4)
   }
 });
 $c_Lexample_PianoRollController.prototype.onKeyWithShift__I__V = (function(keyCode) {
@@ -13753,6 +13914,187 @@ var $d_Lexample_Track = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_Lexample_Track.prototype.$classData = $d_Lexample_Track;
+/** @constructor */
+function $c_Lexample_audio_BooleanWrapper() {
+  $c_O.call(this);
+  this.isTrue$1 = false
+}
+$c_Lexample_audio_BooleanWrapper.prototype = new $h_O();
+$c_Lexample_audio_BooleanWrapper.prototype.constructor = $c_Lexample_audio_BooleanWrapper;
+/** @constructor */
+function $h_Lexample_audio_BooleanWrapper() {
+  /*<skip>*/
+}
+$h_Lexample_audio_BooleanWrapper.prototype = $c_Lexample_audio_BooleanWrapper.prototype;
+$c_Lexample_audio_BooleanWrapper.prototype.productPrefix__T = (function() {
+  return "BooleanWrapper"
+});
+$c_Lexample_audio_BooleanWrapper.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lexample_audio_BooleanWrapper.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lexample_audio_BooleanWrapper(x$1)) {
+    var BooleanWrapper$1 = $as_Lexample_audio_BooleanWrapper(x$1);
+    return (this.isTrue$1 === BooleanWrapper$1.isTrue$1)
+  } else {
+    return false
+  }
+});
+$c_Lexample_audio_BooleanWrapper.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.isTrue$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lexample_audio_BooleanWrapper.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lexample_audio_BooleanWrapper.prototype.hashCode__I = (function() {
+  var acc = (-889275714);
+  acc = $m_sr_Statics$().mix__I__I__I(acc, (this.isTrue$1 ? 1231 : 1237));
+  return $m_sr_Statics$().finalizeHash__I__I__I(acc, 1)
+});
+$c_Lexample_audio_BooleanWrapper.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+$c_Lexample_audio_BooleanWrapper.prototype.init___Z = (function(isTrue) {
+  this.isTrue$1 = isTrue;
+  return this
+});
+function $is_Lexample_audio_BooleanWrapper(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lexample_audio_BooleanWrapper)))
+}
+function $as_Lexample_audio_BooleanWrapper(obj) {
+  return (($is_Lexample_audio_BooleanWrapper(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "example.audio.BooleanWrapper"))
+}
+function $isArrayOf_Lexample_audio_BooleanWrapper(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lexample_audio_BooleanWrapper)))
+}
+function $asArrayOf_Lexample_audio_BooleanWrapper(obj, depth) {
+  return (($isArrayOf_Lexample_audio_BooleanWrapper(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lexample.audio.BooleanWrapper;", depth))
+}
+var $d_Lexample_audio_BooleanWrapper = new $TypeData().initClass({
+  Lexample_audio_BooleanWrapper: 0
+}, false, "example.audio.BooleanWrapper", {
+  Lexample_audio_BooleanWrapper: 1,
+  O: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lexample_audio_BooleanWrapper.prototype.$classData = $d_Lexample_audio_BooleanWrapper;
+/** @constructor */
+function $c_Lexample_audio_Synth$ASDR() {
+  $c_O.call(this);
+  this.a$1 = 0.0;
+  this.s$1 = 0.0;
+  this.d$1 = 0.0;
+  this.r$1 = 0.0;
+  this.$$outer$f = null
+}
+$c_Lexample_audio_Synth$ASDR.prototype = new $h_O();
+$c_Lexample_audio_Synth$ASDR.prototype.constructor = $c_Lexample_audio_Synth$ASDR;
+/** @constructor */
+function $h_Lexample_audio_Synth$ASDR() {
+  /*<skip>*/
+}
+$h_Lexample_audio_Synth$ASDR.prototype = $c_Lexample_audio_Synth$ASDR.prototype;
+$c_Lexample_audio_Synth$ASDR.prototype.productPrefix__T = (function() {
+  return "ASDR"
+});
+$c_Lexample_audio_Synth$ASDR.prototype.productArity__I = (function() {
+  return 4
+});
+$c_Lexample_audio_Synth$ASDR.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if (($is_Lexample_audio_Synth$ASDR(x$1) && ($as_Lexample_audio_Synth$ASDR(x$1).$$outer$f === this.$$outer$f))) {
+    var ASDR$1 = $as_Lexample_audio_Synth$ASDR(x$1);
+    return ((((this.a$1 === ASDR$1.a$1) && (this.s$1 === ASDR$1.s$1)) && (this.d$1 === ASDR$1.d$1)) && (this.r$1 === ASDR$1.r$1))
+  } else {
+    return false
+  }
+});
+$c_Lexample_audio_Synth$ASDR.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.a$1;
+      break
+    }
+    case 1: {
+      return this.s$1;
+      break
+    }
+    case 2: {
+      return this.d$1;
+      break
+    }
+    case 3: {
+      return this.r$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lexample_audio_Synth$ASDR.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lexample_audio_Synth$ASDR.prototype.init___Lexample_audio_Synth__D__D__D__D = (function($$outer, a, s, d, r) {
+  this.a$1 = a;
+  this.s$1 = s;
+  this.d$1 = d;
+  this.r$1 = r;
+  if (($$outer === null)) {
+    throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
+  } else {
+    this.$$outer$f = $$outer
+  };
+  return this
+});
+$c_Lexample_audio_Synth$ASDR.prototype.hashCode__I = (function() {
+  var acc = (-889275714);
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().doubleHash__D__I(this.a$1));
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().doubleHash__D__I(this.s$1));
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().doubleHash__D__I(this.d$1));
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().doubleHash__D__I(this.r$1));
+  return $m_sr_Statics$().finalizeHash__I__I__I(acc, 4)
+});
+$c_Lexample_audio_Synth$ASDR.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lexample_audio_Synth$ASDR(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lexample_audio_Synth$ASDR)))
+}
+function $as_Lexample_audio_Synth$ASDR(obj) {
+  return (($is_Lexample_audio_Synth$ASDR(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "example.audio.Synth$ASDR"))
+}
+function $isArrayOf_Lexample_audio_Synth$ASDR(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lexample_audio_Synth$ASDR)))
+}
+function $asArrayOf_Lexample_audio_Synth$ASDR(obj, depth) {
+  return (($isArrayOf_Lexample_audio_Synth$ASDR(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lexample.audio.Synth$ASDR;", depth))
+}
+var $d_Lexample_audio_Synth$ASDR = new $TypeData().initClass({
+  Lexample_audio_Synth$ASDR: 0
+}, false, "example.audio.Synth$ASDR", {
+  Lexample_audio_Synth$ASDR: 1,
+  O: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lexample_audio_Synth$ASDR.prototype.$classData = $d_Lexample_audio_Synth$ASDR;
 /** @constructor */
 function $c_jl_ArithmeticException() {
   $c_jl_RuntimeException.call(this)

@@ -18,7 +18,7 @@ class NotePlayer(pRollWorld: PianoRollWorld) {
   val song = pRollWorld.song
   var tracks = pRollWorld.tracks.tracks
   val log = new Logger(this)
-//  val synth = new Synth()
+  val synth = new Synth()
   val playerListeners = new ArrayBuffer[PlayerListener]()
 
   var songStartPositionTime: Double = 0
@@ -74,6 +74,13 @@ class NotePlayer(pRollWorld: PianoRollWorld) {
       temp
     }
   }
+
+
+
+
+
+
+
 
   def setPlayPoint(beat: Double, absTime: Double): Unit ={
     stop()//to reset
@@ -158,9 +165,9 @@ class NotePlayer(pRollWorld: PianoRollWorld) {
     log("Stopping interval handle")
     if(intervalHandle != -1) dom.clearInterval(intervalHandle)
     intervalHandle = - 1
-    g.stopAll()
+//    g.stopAll()
     //synth.stop(AudioManager.audio.currentTime)
-//    synth.polyphonicStop()
+    synth.stopAll()
   }
 
 
@@ -170,8 +177,9 @@ class NotePlayer(pRollWorld: PianoRollWorld) {
 
   def playNote(note: Note, time: Double, channel: Int): Unit ={
     val endTime = NoteTimeCalculator.getTimeOfBeat(note.endBeat, song) - songStartPositionTime + absStartTime
-    g.playNote(channel, note.midi, time - AudioManager.audio.currentTime, endTime - AudioManager.audio.currentTime )
-//    synth.polyphonicPlay(note, time, endTime)
+//    g.playNote(channel, note.midi, time - AudioManager.audio.currentTime, endTime - AudioManager.audio.currentTime )
+    synth.playNote(channel, note, time, endTime )
+    //    synth.polyphonicPlay(note, time, endTime)
     //synth.play(note, time)
     //synth.stop(NoteTimeCalculator.getTimeOfBeat(note.endBeat, song) - songStartPositionTime + absStartTime)
   }

@@ -5,806 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2c929f7-bafa-4a04-b9fd-2980383326aa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/A0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/A1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/A2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/A3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/A4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/A5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/A6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/A7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Ab1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Ab2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Ab3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Ab4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Ab5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Ab6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Ab7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/B0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/B1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/B2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/B3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/B4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/B5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/B6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/B7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Bb0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Bb1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Bb2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Bb3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Bb4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Bb5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Bb6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Bb7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/C1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/C2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/C3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/C4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/C5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/C6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/C7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/C8.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/D1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/D2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/D3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/D4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/D5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/D6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/D7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Db1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Db2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Db3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Db4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Db5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Db6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Db7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/E1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/E2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/E3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/E4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/E5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/E6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/E7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Eb1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Eb2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Eb3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Eb4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Eb5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Eb6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Eb7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/F1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/F2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/F3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/F4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/F5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/F6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/F7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/G1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/G2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/G3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/G4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/G5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/G6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/G7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Gb1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Gb2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Gb3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Gb4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Gb5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Gb6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3/Gb7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/A0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/A1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/A2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/A3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/A4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/A5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/A6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/A7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Ab1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Ab2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Ab3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Ab4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Ab5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Ab6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Ab7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/B0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/B1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/B2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/B3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/B4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/B5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/B6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/B7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Bb0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Bb1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Bb2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Bb3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Bb4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Bb5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Bb6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Bb7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/C1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/C2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/C3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/C4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/C5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/C6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/C7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/C8.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/D1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/D2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/D3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/D4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/D5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/D6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/D7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Db1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Db2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Db3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Db4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Db5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Db6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Db7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Db8.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/E1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/E2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/E3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/E4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/E5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/E6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/E7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Eb1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Eb2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Eb3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Eb4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Eb5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Eb6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Eb7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/F1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/F2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/F3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/F4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/F5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/F6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/F7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/G1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/G2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/G3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/G4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/G5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/G6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/G7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Gb1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Gb2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Gb3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Gb4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Gb5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Gb6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3/Gb7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/A0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/A1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/A2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/A3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/A4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/A5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/A6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/A7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Ab1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Ab2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Ab3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Ab4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Ab5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Ab6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Ab7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/B0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/B1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/B2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/B3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/B4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/B5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/B6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/B7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Bb0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Bb1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Bb2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Bb3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Bb4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Bb5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Bb6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Bb7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/C1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/C2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/C3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/C4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/C5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/C6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/C7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/C8.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/D1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/D2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/D3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/D4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/D5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/D6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/D7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Db1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Db2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Db3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Db4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Db5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Db6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Db7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/E1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/E2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/E3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/E4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/E5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/E6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/E7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Eb1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Eb2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Eb3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Eb4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Eb5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Eb6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Eb7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/F1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/F2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/F3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/F4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/F5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/F6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/F7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/G1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/G2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/G3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/G4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/G5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/G6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/G7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Gb1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Gb2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Gb3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Gb4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Gb5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Gb6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3/Gb7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/A0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/A1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/A2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/A3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/A4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/A5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/A6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/A7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Ab1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Ab2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Ab3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Ab4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Ab5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Ab6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Ab7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/B0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/B1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/B2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/B3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/B4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/B5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/B6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/B7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Bb0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Bb1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Bb2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Bb3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Bb4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Bb5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Bb6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Bb7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/C1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/C2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/C3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/C4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/C5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/C6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/C7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/C8.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/D1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/D2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/D3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/D4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/D5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/D6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/D7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Db1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Db2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Db3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Db4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Db5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Db6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Db7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/E1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/E2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/E3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/E4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/E5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/E6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/E7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Eb1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Eb2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Eb3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Eb4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Eb5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Eb6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Eb7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/F1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/F2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/F3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/F4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/F5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/F6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/F7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/G1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/G2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/G3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/G4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/G5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/G6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/G7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Gb1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Gb2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Gb3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Gb4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Gb5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Gb6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3/Gb7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/A0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/A1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/A2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/A3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/A4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/A5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/A6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/A7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Ab1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Ab2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Ab3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Ab4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Ab5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Ab6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Ab7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/B0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/B1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/B2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/B3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/B4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/B5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/B6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/B7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Bb0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Bb1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Bb2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Bb3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Bb4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Bb5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Bb6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Bb7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/C1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/C2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/C3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/C4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/C5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/C6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/C7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/C8.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/D1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/D2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/D3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/D4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/D5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/D6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/D7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Db1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Db2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Db3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Db4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Db5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Db6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Db7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/E1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/E2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/E3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/E4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/E5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/E6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/E7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Eb1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Eb2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Eb3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Eb4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Eb5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Eb6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Eb7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/F1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/F2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/F3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/F4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/F5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/F6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/F7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/G1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/G2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/G3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/G4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/G5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/G6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/G7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Gb1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Gb2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Gb3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Gb4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Gb5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Gb6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3/Gb7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/A0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/A1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/A2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/A3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/A4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/A5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/A6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/A7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Ab1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Ab2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Ab3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Ab4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Ab5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Ab6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Ab7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/B0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/B1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/B2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/B3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/B4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/B5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/B6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/B7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Bb0.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Bb1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Bb2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Bb3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Bb4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Bb5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Bb6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Bb7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/C1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/C2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/C3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/C4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/C5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/C6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/C7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/C8.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/D1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/D2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/D3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/D4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/D5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/D6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/D7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Db1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Db2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Db3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Db4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Db5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Db6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Db7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/E1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/E2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/E3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/E4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/E5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/E6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/E7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Eb1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Eb2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Eb3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Eb4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Eb5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Eb6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Eb7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/F1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/F2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/F3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/F4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/F5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/F6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/F7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/G1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/G2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/G3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/G4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/G5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/G6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/G7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Gb1.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Gb2.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Gb3.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Gb4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Gb5.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Gb6.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3/Gb7.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/midi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/midilib/audioDetect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/midilib/dom_request_script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/midilib/dom_request_xhr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/midilib/gm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/midilib/loader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/midilib/player.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/midilib/plugin.audiotag.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/midilib/plugin.webaudio.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/midilib/plugin.webmidi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/midilib/shim/Base64.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/midilib/shim/Base64binary.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/midilib/shim/WebAudioAPI.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/midilib/shim/WebMIDIAPI.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/midilib/spinner.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/midilib/synesthesia.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-mp3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_bass-ogg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-ogg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-mp3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/brass_section-ogg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-mp3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/flute-ogg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-mp3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/string_ensemble_1-ogg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-mp3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/scripts/soundfont/synth_drum-ogg.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$083ec40f64f7e654b4f1$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$083ec40f64f7e654b4f1.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$083ec40f64f7e654b4f1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$0bab3622e7eeac26b03f$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$0bab3622e7eeac26b03f$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$0bab3622e7eeac26b03f.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$0bab3622e7eeac26b03f.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$1198cf345e9f96dfb18f$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$1198cf345e9f96dfb18f$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$1198cf345e9f96dfb18f.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$1198cf345e9f96dfb18f.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$42484aa15fe13434982d$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$42484aa15fe13434982d$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$42484aa15fe13434982d.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$42484aa15fe13434982d.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$4280ddd6b2d01bd00fb2$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$4280ddd6b2d01bd00fb2$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$4280ddd6b2d01bd00fb2.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$4280ddd6b2d01bd00fb2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$4a5511e6542fd031bb10$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$4a5511e6542fd031bb10.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$4a5511e6542fd031bb10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$61d61a29c67f3d39c872$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$61d61a29c67f3d39c872$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$61d61a29c67f3d39c872.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$61d61a29c67f3d39c872.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$bd2318cb20156c9caa24$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$bd2318cb20156c9caa24.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$bd2318cb20156c9caa24.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$fd77db20356761fa4cac$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$fd77db20356761fa4cac$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$fd77db20356761fa4cac.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$fd77db20356761fa4cac.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Hi.sc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer$$anonfun$scheduleNextBatch$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer$$anonfun$scheduleNextBatch$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/scripts/AudioContextFixer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/example-jsdeps.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/example-opt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/example-opt.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/package-min-js-deps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/$global/console/$global/streams/out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/compile/console/$global/streams/export" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/compile/console/$global/streams/out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/compile/fullOptJS/$global/streams/fullopt-js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/compile/fullOptJS/$global/streams/out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/runtime/unmanagedClasspath/$global/streams/export" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/runtime/unmanagedJars/$global/streams/export" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/test/unmanagedClasspath/$global/streams/export" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/test/unmanagedJars/$global/streams/export" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/scripts/AudioContextFixer.js" afterPath="$PROJECT_DIR$/src/main/resources/scripts/mine/AudioContextFixer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/ActiveInactiveImage.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/ActiveInactiveImage.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/BPMChange$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/BPMChange$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/BPMChange.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/BPMChange.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/BPMMarker$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/BPMMarker$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/BPMMarker.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/BPMMarker.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/BooleanVar$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/BooleanVar$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/BooleanVar.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/BooleanVar.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Button.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Button.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/ChildObject$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/ChildObject$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/ChildObject.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/ChildObject.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Clickable$class.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Clickable$class.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Clickable.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Clickable.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Clickable2.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Clickable2.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Component.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Component.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/ConfigColors$$anonfun$load$1.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/ConfigColors$$anonfun$load$1.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/ConfigColors$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/ConfigColors$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Container.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Container.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/HTML5InputManager.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/HTML5InputManager.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Image.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Image.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/InputProcessor$class.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/InputProcessor$class.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/InputProcessor.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/InputProcessor.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/IntVar$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/IntVar$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/IntVar.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/IntVar.sjsir" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/Synth$$anonfun$polyphonicStop$1.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/KeyCode$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/KeyCode$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/KeyCode$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/KeyCode$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/LinearContainer.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/LinearContainer.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Logger$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Logger$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Logger$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Logger$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Logger.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Logger.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MeasureMarker$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MeasureMarker$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MeasureMarker.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MeasureMarker.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer$$anon$1.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer$$anon$1.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer$$anon$2.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer$$anon$2.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer$$anon$3.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer$$anon$3.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer$$anon$4.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer$$anon$4.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer$$anon$5.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer$$anon$5.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer$$anon$6.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer$$anon$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer$$anon$6.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer$$anon$6.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer$$anonfun$resetToolPanel$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer$$anonfun$resetToolPanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MenuRenderer.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MessageQueue$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MessageQueue$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MessageQueue$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MessageQueue$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MessageQueue.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MessageQueue.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MessageQueue.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MessageQueue.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MeterChange$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MeterChange$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MeterChange.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MeterChange.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/MyMath$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/MyMath$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Note$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Note$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Note.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Note.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/NoteTimeCalculator$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/NoteTimeCalculator$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/NoteTimeCalculator.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/NoteTimeCalculator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/NoteTimeCalculator.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/NoteTimeCalculator.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/NotesDataStructure$$anonfun$logStructure$1.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/NotesDataStructure$$anonfun$logStructure$1.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/NotesDataStructure$$anonfun$toString$1.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/NotesDataStructure$$anonfun$toString$1.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/NotesDataStructure.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/NotesDataStructure.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/NotesDataStructure.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/NotesDataStructure.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollConfig$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollConfig$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollConfig$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollConfig$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollConfig.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollController$$anonfun$onDrag$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollController$$anonfun$onDrag$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollController$$anonfun$onDrag$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollController$$anonfun$onDrag$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollController$$anonfun$onKey$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollController$$anonfun$onKey$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/KeyCode.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/KeyCode.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollController$$anonfun$writeBackDirtyNote$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollController$$anonfun$writeBackDirtyNote$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollController$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollController$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollController$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollController$.sjsir" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollController.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollController.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollController.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollNotesRenderLogic.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollNotesRenderLogic.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRenderer$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRenderer$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRenderer$$anonfun$getNoteAtMouseClick$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRenderer$$anonfun$getNoteAtMouseClick$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRenderer$$anonfun$render$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRenderer$$anonfun$render$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRenderer$$anonfun$renderNotes$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRenderer$$anonfun$renderNotes$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRenderer$$anonfun$renderRollHorizontalLines$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRenderer$$anonfun$renderRollHorizontalLines$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRenderer$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRenderer$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRenderer$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRenderer$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRenderer.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRenderer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRenderer.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRenderer.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRulerRenderer.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollRulerRenderer.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollSettings$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollSettings$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollSettings.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollSettings.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollWorld.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollWorld.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollWorld.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PianoRollWorld.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PlaybackNote$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PlaybackNote$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PlaybackNote.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PlaybackNote.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/PlayerListener.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/PlayerListener.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Rectangle$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Rectangle$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Rectangle.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Rectangle.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/RelativeContext$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/RelativeContext$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/RenderObject.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/RenderObject.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/RenderObject2.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/RenderObject2.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Renderable.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Renderable.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/ScalaJSExample$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/ScalaJSExample$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/ScalaJSExample$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/ScalaJSExample$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/SelectVar$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/SelectVar$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/SelectVar.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/SelectVar.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Setting.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Setting.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/SettingsRenderer.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/SettingsRenderer.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/SettingsRenderer2$$anon$1.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/SettingsRenderer2$$anon$1.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/SettingsRenderer2$$anon$2.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/SettingsRenderer2$$anon$2.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/SettingsRenderer2$$anon$3.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/SettingsRenderer2$$anon$3.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/SettingsRenderer2.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/SettingsRenderer2.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/SettingsRenderer3.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/SettingsRenderer3.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/SmartImage.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/SmartImage.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/SmartImage2.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/SmartImage2.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Song$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Song$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Song$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Song$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Song.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Song.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/Song.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/Song.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/StringVar$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/StringVar$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/StringVar.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/StringVar.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/TickMarker$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/TickMarker$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/TickMarker.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/TickMarker.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/TickRenderLogic$$anonfun$getTickMarkers$3.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/TickRenderLogic$$anonfun$getTickMarkers$3.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/TickRenderLogic.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/TickRenderLogic.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/ToggleImage.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/ToggleImage.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/AudioManager$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/AudioManager$.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/AudioManager.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/AudioManager.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/BooleanWrapper$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/BooleanWrapper$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/BooleanWrapper$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/BooleanWrapper$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/BooleanWrapper.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/BooleanWrapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/BooleanWrapper.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/BooleanWrapper.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer$$anonfun$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer$$anonfun$playNotes$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer$$anonfun$playNotes$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer$$anonfun$playNotes$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer$$anonfun$playNotes$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer$$anonfun$playNotes$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer$$anonfun$playNotes$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer$$anonfun$setPlayPoint$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer$$anonfun$setPlayPoint$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer$IteratorWithPeek.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer$IteratorWithPeek.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer$IteratorWithPeek.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer$IteratorWithPeek.sjsir" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/NotePlayer.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/Synth$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/Synth$$anonfun$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/Synth$$anonfun$polyphonicPlay$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/Synth$$anonfun$polyphonicPlay$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/Synth$$anonfun$polyphonicStop$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/Synth$$anonfun$polyphonicStop$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/Synth.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/Synth.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/Synth.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/example/audio/Synth.sjsir" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/test/PianoRollRulerTest$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/test/PianoRollRulerTest$.sjsir" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/output" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/output" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updatedJS/$global/streams/example-fastopt.js/in-cache" afterPath="$PROJECT_DIR$/target/streams/$global/updatedJS/$global/streams/example-fastopt.js/in-cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updatedJS/$global/streams/example-fastopt.js/out-cache" afterPath="$PROJECT_DIR$/target/streams/$global/updatedJS/$global/streams/example-fastopt.js/out-cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updatedJS/$global/streams/example-jsdeps.js/in-cache" afterPath="$PROJECT_DIR$/target/streams/$global/updatedJS/$global/streams/example-jsdeps.js/in-cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updatedJS/$global/streams/example-jsdeps.js/out-cache" afterPath="$PROJECT_DIR$/target/streams/$global/updatedJS/$global/streams/example-jsdeps.js/out-cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/$global/$global/sjsirFilesOnClasspath/data" afterPath="$PROJECT_DIR$/target/streams/compile/$global/$global/sjsirFilesOnClasspath/data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sbt.xml" afterPath="$PROJECT_DIR$/.idea/sbt.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/index.html" afterPath="$PROJECT_DIR$/src/main/resources/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/example/MenuRenderer.scala" afterPath="$PROJECT_DIR$/src/main/scala/example/MenuRenderer.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/example/MessageQueue.scala" afterPath="$PROJECT_DIR$/src/main/scala/example/MessageQueue.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/example/NoteTimeCalculator.scala" afterPath="$PROJECT_DIR$/src/main/scala/example/NoteTimeCalculator.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/scripts/midi.js" afterPath="$PROJECT_DIR$/src/main/resources/scripts/midi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/scripts/midilib/loader.js" afterPath="$PROJECT_DIR$/src/main/resources/scripts/midilib/loader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/example/KeyCode.scala" afterPath="$PROJECT_DIR$/src/main/scala/example/KeyCode.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/example/PianoRollController.scala" afterPath="$PROJECT_DIR$/src/main/scala/example/PianoRollController.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/example/PianoRollRenderer.scala" afterPath="$PROJECT_DIR$/src/main/scala/example/PianoRollRenderer.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/example/PianoRollWorld.scala" afterPath="$PROJECT_DIR$/src/main/scala/example/PianoRollWorld.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/example/ScalaJSExample.scala" afterPath="$PROJECT_DIR$/src/main/scala/example/ScalaJSExample.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/example/TrackDataStructure.scala" afterPath="$PROJECT_DIR$/src/main/scala/example/TrackDataStructure.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/example/audio/NotePlayer.scala" afterPath="$PROJECT_DIR$/src/main/scala/example/audio/NotePlayer.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/example/audio/Synth.scala" afterPath="$PROJECT_DIR$/src/main/scala/example/audio/Synth.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/example/example_sjs0.6_2.11/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/example/example_sjs0.6_2.11/0.1-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/example/example_sjs0.6_2.11/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/example/example_sjs0.6_2.11/0.1-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-optional.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-phantom-js-jetty.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-phantom-js-jetty.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-plugin.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-pom.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-provided.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-runtime.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/example-example_sjs0.6_2.11-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/JS_DEPENDENCIES" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/JS_DEPENDENCIES" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/index.html" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/scripts/midi.js" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/scripts/midi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/scripts/midilib/loader.js" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/scripts/midilib/loader.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/example-fastopt.js" afterPath="$PROJECT_DIR$/target/scala-2.11/example-fastopt.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/example-fastopt.js.map" afterPath="$PROJECT_DIR$/target/scala-2.11/example-fastopt.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/package-js-deps" afterPath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/package-js-deps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/exportedProducts/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/fastOptJS/$global/streams/fastopt-js" afterPath="$PROJECT_DIR$/target/streams/compile/fastOptJS/$global/streams/fastopt-js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/fastOptJS/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/fastOptJS/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/fullClasspath/$global/streams/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
     </list>
     <ignored path="Example.iws" />
@@ -840,92 +92,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="65.92">
-              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Song.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/example/Song.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="157" column="17" selection-start-line="157" selection-start-column="6" selection-end-line="157" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="midi.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/scripts/midi.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spinner.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/scripts/midilib/spinner.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.777778">
-              <caret line="68" column="49" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="49" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loader.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/scripts/midilib/loader.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebMIDIAPI.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/scripts/midilib/shim/WebMIDIAPI.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plugin.webmidi.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/scripts/midilib/plugin.webmidi.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plugin.webaudio.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/scripts/midilib/plugin.webaudio.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.814815">
-              <caret line="82" column="22" selection-start-line="82" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NotePlayer.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/example/audio/NotePlayer.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3689095">
-              <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+            <state vertical-scroll-proportion="59.48">
+              <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -936,6 +104,86 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="7" column="42" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="midi.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/scripts/midi.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="15" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.sbt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/build.sbt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.51972157">
+              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotePlayer.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/example/audio/NotePlayer.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.814815">
+              <caret line="169" column="17" selection-start-line="169" selection-start-column="10" selection-end-line="169" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PianoRollController.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/example/PianoRollController.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="179" column="6" selection-start-line="179" selection-start-column="6" selection-end-line="179" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KeyCode.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/example/KeyCode.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Synth.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/example/audio/Synth.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.407408">
+              <caret line="148" column="2" selection-start-line="148" selection-start-column="2" selection-end-line="148" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AudioParam.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.11/jars/scalajs-dom_sjs0.6_2.11-0.8.1.jar!/org/scalajs/dom/raw/AudioParam.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.740741">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -966,7 +214,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/example/SettingsRenderer.scala" />
         <option value="$USER_HOME$/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.11/jars/scalajs-dom_sjs0.6_2.11-0.8.1.jar!/org/scalajs/dom/raw/HTMLElement.class" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/project/build.sbt" />
@@ -981,7 +228,6 @@
         <option value="$PROJECT_DIR$/src/main/scala/example/SettingsRenderer2.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/example/ToolRenderer.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/example/RenderObject.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/example/KeyCode.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/example/HTML5InputManager.scala" />
         <option value="$USER_HOME$/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.11/jars/scalajs-dom_sjs0.6_2.11-0.8.1.jar!/org/scalajs/dom/raw/AudioContext.class" />
         <option value="$PROJECT_DIR$/src/main/scala/example/audio/AudioManager.scala" />
@@ -1001,22 +247,24 @@
         <option value="$PROJECT_DIR$/target/scala-2.11/classes/index-opt.html" />
         <option value="$PROJECT_DIR$/src/main/resources/index-opt.html" />
         <option value="$PROJECT_DIR$/build/index.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/scala/example/MessageQueue.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/example/MenuRenderer.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/example/PianoRollRenderer.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/example/TrackDataStructure.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/example/PianoRollWorld.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/example/PianoRollController.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/example/NoteTimeCalculator.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/example/audio/Synth.scala" />
         <option value="$PROJECT_DIR$/target/scala-2.11/classes/index.html" />
         <option value="$PROJECT_DIR$/src/main/scala/example/ScalaJSExample.scala" />
         <option value="$PROJECT_DIR$/src/main/resources/scripts/midilib/plugin.webaudio.js" />
         <option value="$PROJECT_DIR$/src/main/resources/scripts/midilib/spinner.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/scripts/midilib/loader.js" />
         <option value="$PROJECT_DIR$/src/main/resources/scripts/midi.js" />
         <option value="$PROJECT_DIR$/src/main/scala/example/audio/NotePlayer.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/example/audio/Synth.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/example/KeyCode.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/example/PianoRollController.scala" />
+        <option value="$PROJECT_DIR$/src/main/resources/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1124,102 +372,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala-2.11" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PianoRoll" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala-2.11" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PianoRoll" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala-2.11" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PianoRoll" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala-2.11" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="soundfont" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PianoRoll" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1238,165 +390,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PianoRoll" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PianoRoll" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="soundfont" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PianoRoll" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PianoRoll" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="midilib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PianoRoll" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="midilib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shim" />
+              <option name="myItemId" value="project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2190,7 +1184,7 @@
       <workItem from="1442779990816" duration="17327000" />
       <workItem from="1442884766241" duration="6079000" />
       <workItem from="1451536357376" duration="12648000" />
-      <workItem from="1451549291932" duration="6330000" />
+      <workItem from="1451549291932" duration="12051000" />
     </task>
     <task id="LOCAL-00001" summary="Clicks now insert random note into Notes data structure">
       <created>1436734942883</created>
@@ -2226,7 +1220,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240500000" />
+    <option name="totallyTimeSpent" value="246221000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -2236,7 +1230,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2863436" sideWeight="0.5549273" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2863436" sideWeight="0.55815834" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844576" sideWeight="0.49353796" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29765397" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2244,7 +1238,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23101777" sideWeight="0.6102041" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2863436" sideWeight="0.4450727" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2863436" sideWeight="0.4418417" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2293,38 +1287,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/scripts/example-opt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/images/pause.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="33" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -2394,14 +1360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/example/PianoRollController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5925926">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/example/NotesDataStructure.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2421,14 +1379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/example/audio/Synth.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -2501,14 +1451,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2619,52 +1561,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/example/TrackDataStructure.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/scripts/midilib/shim/WebMIDIAPI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/scripts/midilib/plugin.webmidi.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/scripts/midilib/loader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/scripts/midilib/plugin.webaudio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.814815">
-          <caret line="82" column="22" selection-start-line="82" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/scripts/midi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -2679,14 +1579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="65.92">
-          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/example/Song.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2695,10 +1587,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/scripts/soundfont/acoustic_grand_piano-mp3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="891.85187">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/scripts/midilib/loader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="190" column="6" selection-start-line="190" selection-start-column="6" selection-end-line="190" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/scripts/midilib/shim/WebMIDIAPI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/scripts/midilib/plugin.webaudio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1481482">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.11/jars/scalajs-dom_sjs0.6_2.11-0.8.1.jar!/org/scalajs/dom/raw/AudioParam.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.740741">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/scripts/midi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/example/audio/Synth.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.407408">
+          <caret line="148" column="2" selection-start-line="148" selection-start-column="2" selection-end-line="148" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/example/audio/NotePlayer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3689095">
-          <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+        <state vertical-scroll-proportion="-11.814815">
+          <caret line="169" column="17" selection-start-line="169" selection-start-column="10" selection-end-line="169" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/example/KeyCode.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/example/PianoRollController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="179" column="6" selection-start-line="179" selection-start-column="6" selection-end-line="179" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="59.48">
+          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/example/TrackDataStructure.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51972157">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding />
         </state>
       </provider>

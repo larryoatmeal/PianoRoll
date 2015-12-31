@@ -37,4 +37,12 @@ object KeyCode {
   val Z = 91
   val BACKSPACE = 8
   val SPACE = 32
+
+  val one = 49
+  val two = 50
+  val three = 51
+  val four = 52
+  val five = 53
+  val six = 54
+
 }

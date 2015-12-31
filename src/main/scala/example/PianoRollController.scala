@@ -153,6 +153,32 @@ class PianoRollController(pianoRollWorld: PianoRollWorld,
         //pianoRollWorld.dirtyNote.foreach(note => pianoRollWorld.deleteNote(note))
         pianoRollWorld.dirtyNote = None
       }
+      case KeyCode.one => {
+        writeBackDirtyNote()
+        pianoRollWorld.trackSelected(0)
+        pianoRollRenderer.menuRenderer.selectInstrumentExternal(0)
+      }
+      case KeyCode.two => {
+        writeBackDirtyNote()
+        pianoRollWorld.trackSelected(1)
+        pianoRollRenderer.menuRenderer.selectInstrumentExternal(1)
+      }
+      case KeyCode.three => {
+        writeBackDirtyNote()
+        pianoRollWorld.trackSelected(2)
+        pianoRollRenderer.menuRenderer.selectInstrumentExternal(2)
+      }
+      case KeyCode.four => {
+        writeBackDirtyNote()
+        pianoRollWorld.trackSelected(3)
+        pianoRollRenderer.menuRenderer.selectInstrumentExternal(3)
+      }
+      case KeyCode.five => {
+        writeBackDirtyNote()
+        pianoRollWorld.trackSelected(4)
+        pianoRollRenderer.menuRenderer.selectInstrumentExternal(4)
+      }
+
       case _ =>
     }
   }

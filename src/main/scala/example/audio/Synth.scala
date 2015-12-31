@@ -10,6 +10,8 @@ import org.scalajs.dom
 import org.scalajs.dom.raw.{GainNode, OscillatorNode}
 
 import scala.collection.immutable.IndexedSeq
+import scala.collection.mutable
+import scala.collection.mutable.ArrayBuffer
 
 case class BooleanWrapper(var isTrue: Boolean)
 
@@ -66,6 +68,61 @@ class Synth {
     }
   }
 
+//  val oscillators = mutable.HashMap[(Int, Int), OscillatorNode]
+
+  def secondsToTimeConstant(sec: Double): Double = sec / 5.0
+
+  val oscList = ArrayBuffer[OscillatorNode]()
+
+
+  def generateOsc(note: Note, start: Double, end: Double, shape: String, gain: Double, asdr: ASDR = standardASDR, detune: Double = 0): Unit ={
+    val oscillator: OscillatorNode = audio.createOscillator()
+    val pitch = Math.pow(2.0, (note.midi+ detune - 69) / 12.0) * 440.0
+    oscillator.frequency.value = pitch
+
+    oscillator.`type` = shape
+
+    val gainNode = audio.createGain()
+    gainNode.gain.value = 0
+
+    gainNode.gain.setTargetAtTime(gain, start, secondsToTimeConstant(asdr.a))
+    gainNode.gain.setTargetAtTime(asdr.s * gain, start + asdr.a, secondsToTimeConstant(asdr.d))
+
+    gainNode.gain.setTargetAtTime(0, end, secondsToTimeConstant(asdr.r))
+
+    oscillator.connect(gainNode)
+    gainNode.connect(audio.destination)
+
+    oscillator.start(start)
+    oscillator.stop(end + asdr.r)
+
+    oscList.append(oscillator)
+  }
+
+  case class ASDR(a: Double, s: Double, d: Double, r: Double)
+  val standardASDR = ASDR(a = 0.1, s = 0.8, d = 0.2, r = 0.1)
+
+  def playNote(channel: Int, note: Note, start: Double, end: Double) = {
+
+    if(channel == 0){
+      generateOsc(note, start, end, "triangle", 0.5, ASDR(0.05, 0.01, 2, 0.1))
+      generateOsc(note, start, end, "square", 0.5, ASDR(0.05, 0.01, 2, 0.1))
+      //      generateOsc(note, start, end, "square", 0.5)
+    }
+    else if(channel == 1){
+      generateOsc(note, start, end, "sawtooth", 0.3, ASDR(0.2, 0.9, 1, 0.1))
+      generateOsc(note, start, end, "sine", 0.5, ASDR(0.2, 0.9, 1, 0.1) )
+    }else if(channel == 2){
+      generateOsc(note, start, end, "sawtooth", 0.5, ASDR(0.1, 0.9, 1, 0.1))
+      generateOsc(note, start, end, "sawtooth", 0.5, ASDR(0.1, 0.9, 1, 0.1), 0.1)
+    }else if(channel == 3){
+      generateOsc(note, start, end, "sine", 0.5, ASDR(0.1, 0.9, 1, 0.1), 0.1)
+    }
+    else{
+      generateOsc(note, start, end, "square", 0.5, ASDR(0.1, 0.4, 1, 0.1))
+    }
+  }
+
 
   def polyphonicPlay(note: Note, when: Double): Unit = {
 //    log(s"Playing $note")
@@ -89,8 +146,9 @@ class Synth {
     }
     //oscillator = null
   }
-
-  def polyphonicStop(): Unit = {
-    oscillators.foreach(osc => osc._2.gain.value = 0)
+  
+  def stopAll(): Unit = {
+//    oscillators.foreach(osc => osc._2.gain.value = 0)
+    oscList.foreach{_.stop(0)}
   }
 }

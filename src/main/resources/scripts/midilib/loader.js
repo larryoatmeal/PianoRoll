@@ -189,7 +189,6 @@ MIDI.Player = MIDI.Player || {};
 			});
 		}
 	};
-
 	root.setDefaultPlugin = function(midi) {
 		for (var key in midi) {
 			root[key] = midi[key];
