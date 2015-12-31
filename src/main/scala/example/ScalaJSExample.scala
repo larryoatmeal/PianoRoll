@@ -23,7 +23,7 @@ object ScalaJSExample {
   def main(canvas: html.Canvas): Unit = {
 
     inputManager = new HTML5InputManager(canvas)
-    container = new PianoRollWorld()
+    container = new PianoRollWorld(Song.starterSong)
 
     canvas.width = canvas.parentElement.clientWidth
     canvas.height = canvas.parentElement.clientHeight

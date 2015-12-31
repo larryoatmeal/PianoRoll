@@ -155,6 +155,8 @@ object Song{
     MeterChange(25, PianoRollConfig.BeatResolution)
   )//4/4
 
+  val starterSong = Song(200, Vector[Note](), Vector(new BPMChange(0, 120)), Vector(MeterChange(0, PianoRollConfig.BeatResolution)))
+
   val demoSong = Song(demoOneNumMeasures, arpeggio, Vector(new BPMChange(0, 120)), demoOneMeterChanges)
 
   val demoSong2 =demoSong

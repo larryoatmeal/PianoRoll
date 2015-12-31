@@ -15,8 +15,7 @@ import scala.collection.mutable.ArrayBuffer
  */
 class NotePlayer(pRollWorld: PianoRollWorld) {
   val song = pRollWorld.song
-  val notes = pRollWorld.notes
-
+  var tracks = pRollWorld.tracks.tracks
   val log = new Logger(this)
   val synth = new Synth()
   val playerListeners = new ArrayBuffer[PlayerListener]()
@@ -31,7 +30,7 @@ class NotePlayer(pRollWorld: PianoRollWorld) {
   //var noteArray: Vector[(Note, Double)]
 
   //so we can read note iterator without losing notes
-  var noteIteratorDirty: (Note, Double) = null
+  var dirtyNote: (Note, Double) = null
 
 
   val IntervalTimeMs = 25
@@ -40,7 +39,9 @@ class NotePlayer(pRollWorld: PianoRollWorld) {
   var intervalHandle: Int = -1
 
   def prepare(): Unit ={
-    notes.sort()
+    tracks.foreach{
+      track => track.notes.sort()
+    }
   }
 
   def setPlayPoint(beat: Double, absTime: Double): Unit ={
@@ -49,29 +50,34 @@ class NotePlayer(pRollWorld: PianoRollWorld) {
     absStartTime = absTime + StartOffsetTime
     songStartPositionTime = NoteTimeCalculator.getTimeOfBeat(beat, song)
     log(s"Songstartposition $songStartPositionTime")
-    //must sort first
-    noteIterator = NoteTimeCalculator.iterator(beat, song, notes)
 
-    //only attempt to play if not empty
-    if(noteIterator.hasNext){
-      noteIteratorDirty = noteIterator.next()
-      intervalHandle = dom.setInterval(scheduleNextBatch _, IntervalTimeMs)
-    }
+
+
+
+    tracks.foreach(track => {
+      //must sort first
+      noteIterator = NoteTimeCalculator.iterator(beat, song, track.notes)
+      //only attempt to play if not empty
+      if(noteIterator.hasNext){
+        dirtyNote = noteIterator.next()
+        intervalHandle = dom.setInterval(scheduleNextBatch _, IntervalTimeMs)
+      }
+    })
   }
 
   def scheduleNextBatch(): Unit ={
     if(noteIterator.isEmpty){
       //the very last dirty is not captured by the while loop
-      if(noteIteratorDirty != null) {
-        playNote(noteIteratorDirty._1, absStartTime + noteIteratorDirty._2 - songStartPositionTime)
-        noteIteratorDirty = null
+      if(dirtyNote != null) {
+        playNote(dirtyNote._1, absStartTime + dirtyNote._2 - songStartPositionTime)
+        dirtyNote = null
       }
     }else{
       while(noteIterator.hasNext &&
           AudioManager.audio.currentTime + LookAheadSeconds
-          > absStartTime + noteIteratorDirty._2 - songStartPositionTime){
-        playNote(noteIteratorDirty._1, absStartTime + noteIteratorDirty._2 - songStartPositionTime)
-        noteIteratorDirty = noteIterator.next()
+          > absStartTime + dirtyNote._2 - songStartPositionTime){
+        playNote(dirtyNote._1, absStartTime + dirtyNote._2 - songStartPositionTime)
+        dirtyNote = noteIterator.next()
       }
     }
 

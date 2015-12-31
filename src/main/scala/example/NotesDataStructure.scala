@@ -13,7 +13,7 @@ import scala.collection.mutable.ArrayBuffer
  * 2 measures seems to be a good bucket side. Probably average 16 notes maybe,
  * which is manageable to sort
  */
-class NotesDataStructure(totalBeats: Int, initialNotes: Vector[Note]){
+class NotesDataStructure(totalBeats: Int, initialNotes: Vector[Note] = Vector[Note]()){
 
   val log = new Logger(this.getClass)
   //2 measures

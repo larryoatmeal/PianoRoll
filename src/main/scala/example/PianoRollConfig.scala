@@ -4,6 +4,8 @@ package example
  * Created by Larry on 7/11/15.
  */
 object PianoRollConfig {
+  val DRAGGING_ENABLED: Boolean = false
+
 
   val Quarter = 4
   val Eighth = 8

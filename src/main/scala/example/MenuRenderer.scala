@@ -41,10 +41,43 @@ class MenuRenderer(ctx: CanvasRenderingContext2D, rect: Rectangle, messageQueue:
     (x, y) => {resetToolPanel();messageQueue.send(MessageQueue.TOOL_SELECT)})
   val toolPanel = Vector(selectButton, pencilButton)
 
+
   val helpButton = new SmartImage("images/question.png"){
     override def onClick(x: Double, y: Double): Unit = messageQueue.send(MessageQueue.HELP)
   }
 
+  //#Instruments
+
+
+
+
+  def createSelectOne(activeImage: String,
+                      inactiveImage: String,
+                      message: Int,
+                      deactivate: () => Unit): ActiveInactiveImage ={
+    val active = new SmartImage(activeImage)
+    val inactive = new SmartImage(inactiveImage)
+    new ActiveInactiveImage(active, inactive, (x,y) => {
+      deactivate()
+      messageQueue.send(message)
+    })
+  }
+
+  val instrumentData: Array[(String, String, Int, () => Unit)] = Array("piano", "violin", "brass", "flute", "bass")
+    .zip(Array(MessageQueue.PIANO, MessageQueue.VIOLIN, MessageQueue.BRASS, MessageQueue.FLUTE, MessageQueue.BASS))
+    .map {
+      case (name: String, msg: Int) => (s"images/${name}_color.png", s"images/$name.png", msg, deactiveAllInstruments _)
+    }
+
+  val instrumentPanel: Vector[ActiveInactiveImage] = instrumentData.map{
+    case (act, inact, msg, f) => createSelectOne(act, inact, msg, f)
+  }.toVector
+
+  def deactiveAllInstruments(): Unit ={
+    instrumentPanel.foreach{
+      _.deActivate();
+    }
+  }
   /**
    * Called when user selects tool via short cut
    * @param toolMessage
@@ -74,9 +107,14 @@ class MenuRenderer(ctx: CanvasRenderingContext2D, rect: Rectangle, messageQueue:
 
   val masterContainer: LinearContainer = new LinearContainer()
 
-  masterContainer.bulkAdd(playbackPanel, 0.05, 0.8, 0.01)
-  masterContainer.bulkAdd(toolPanel ++ Vector(helpButton), 0.05, 0.8, 0.01, 0.8)
+  Logger.debug(instrumentPanel.toString(), getClass)
 
+  private val pW: Double = 0.05
+  private val pH: Double = 0.8
+  private val pMargin: Double = 0.01
+  masterContainer.bulkAdd(playbackPanel, pW, pH, pMargin)
+  masterContainer.bulkAdd(toolPanel ++ Vector(helpButton), pW, pH, pMargin, 0.8)
+  masterContainer.bulkAdd(instrumentPanel, pW, pH, pMargin, 0.3)
 
   def draw(): Unit ={
 

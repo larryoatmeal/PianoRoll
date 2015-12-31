@@ -3,6 +3,7 @@ package example
 import org.scalajs.dom
 import org.scalajs.dom.{CanvasRenderingContext2D, html}
 
+import scala.collection.mutable.ArrayBuffer
 import scala.scalajs.js.Any
 
 /**
@@ -146,10 +147,12 @@ class PianoRollRenderer(pRollWorld: PianoRollWorld, canvas: html.Canvas, rect: R
     val startBeat = pRollWorld.startBeat
     val endBeat = startBeat + widthBeats - 1
 
-    ctx.fillStyle = PianoRollNoteColor
-    pRollWorld.notes.iterator(pRollWorld.startBeat,
-      endBeat).foreach(note => {
-      renderNote(note)
+    pRollWorld.tracks.tracks.foreach(track => {
+      ctx.fillStyle = track.color
+      track.notes.iterator(pRollWorld.startBeat,
+        endBeat).foreach(note => {
+        renderNote(note)
+      })
     })
 
     ctx.fillStyle = PianoRollEditingNoteColor
@@ -218,13 +221,17 @@ class PianoRollRenderer(pRollWorld: PianoRollWorld, canvas: html.Canvas, rect: R
     Logger.debug(s"Midi $midi", getClass)
     Logger.debug(s"Beat $beat", getClass)
 
-    val noteIterator = pRollWorld.notes.iterator(pRollWorld.startBeat, pRollWorld.startBeat + pRollWorld.widthBeats)
+    val candidates: ArrayBuffer[Note] = pRollWorld.tracks.tracks.flatMap({
+      track => {
+        val noteIterator = track.notes.iterator(pRollWorld.startBeat, pRollWorld.startBeat + pRollWorld.widthBeats)
 
-    //append the dirty note if necessary
-    val modifiedIterator =
-      if(pRollWorld.dirtyNote.isDefined) noteIterator ++ Iterable[Note](pRollWorld.dirtyNote.get) else noteIterator
-
-    modifiedIterator.find(Note.inNote(midi,beat,_))
+        //append the dirty note if necessary
+        val modifiedIterator =
+          if(pRollWorld.dirtyNote.isDefined) noteIterator ++ Iterable[Note](pRollWorld.dirtyNote.get) else noteIterator
+        modifiedIterator.find(Note.inNote(midi,beat,_))
+      }
+    })
+    candidates.headOption
   }
 
   def getStartXForNote(beat: Double) = {

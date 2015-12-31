@@ -5,7 +5,7 @@ import scala.collection.mutable
 /**
  * Created by Larry on 7/11/15.
  */
-class PianoRollWorld {
+class PianoRollWorld(val song: Song) {
 
   var dirtyNote: Option[Note] = None
   var locatorBeat: Double = 0.0
@@ -25,8 +25,10 @@ class PianoRollWorld {
   def rollHighNote: Int = rollLowNote + rollRange
 
   //val notes = new mutable.TreeSet[Note]()(Note.orderingByStart)
-  val song = Song.demoSong2
-  val notes = new NotesDataStructure(song.measures * PianoRollConfig.BeatResolution, song.initNotes)
+  val tracks: TrackDataStructure = TrackDataStructure.getDefaultTracks(song.measures * PianoRollConfig.BeatResolution)
+
+
+//  val notes = new NotesDataStructure(song.measures * PianoRollConfig.BeatResolution, song.initNotes)
   val tickLogic = new TickRenderLogic(song)
 
   val STEP_RATIO = 20
@@ -35,17 +37,25 @@ class PianoRollWorld {
 
   def addNote(note: Note): Unit ={
 //    Logger.verbose(s"Adding $note", this.getClass)
-    notes.add(note)
+    getCurrentTrack.notes.add(note)
     //notes.logStructure()
+  }
+
+  def getCurrentTrack: Track = {
+    tracks.getCurrentTrack
   }
 
   def deleteNote(note: Note): Unit = {
 //    Logger.verbose(s"Deleting $note", this.getClass)
-    notes.delete(note)
+    getCurrentTrack.notes.delete(note)
   }
 
-  def shiftBeat(right: Boolean)={
-    val magnitude = MyMath.ceil(widthBeats, STEP_RATIO)
+  def trackSelected(num: Int): Unit ={
+    tracks.setTrack(num)
+  }
+
+  def shiftBeat(right: Boolean, division: Int = STEP_RATIO) ={
+    val magnitude = MyMath.ceil(widthBeats, division)
     val deltaBeat = if(right) magnitude else -magnitude
 
     startBeat = MyMath.clamp(startBeat + deltaBeat, 0, song.totalBeats - widthBeats)
@@ -70,8 +80,8 @@ class PianoRollWorld {
   private val minNote = 0
   private val minRollRange = 6
 
-  def shiftRoll(up: Boolean) = {
-    val magnitude = MyMath.ceil(rollRange,20)
+  def shiftRoll(up: Boolean, division: Int = 20) = {
+    val magnitude = MyMath.ceil(rollRange,division)
     val delta = if(up) magnitude else -magnitude
     rollLowNote = MyMath.clamp(rollLowNote + delta, minNote, maxNote-rollRange)
   }

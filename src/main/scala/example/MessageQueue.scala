@@ -36,4 +36,12 @@ object MessageQueue{
   val TOOL_PENCIL = 4
   val HELP = 5
 
+
+  val PIANO = 6
+  val VIOLIN = 6
+  val BRASS = 6
+  val FLUTE = 6
+  val BASS = 6
+
+
 }

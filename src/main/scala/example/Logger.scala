@@ -19,6 +19,7 @@ class Logger(clazz: Class[_]){
 
 object Logger {
 
+
   def verbose(msg: String, clazz: Class[_]){
     println(s"VERBOSE:${clazz.getName} - $msg")
   }

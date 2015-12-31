@@ -72,7 +72,23 @@ class PianoRollController(pianoRollWorld: PianoRollWorld,
       if(settings.state == StateSelect){
         val adjustedX = x - noteOffsetFromStartX
         val (midi, beat) = pianoRollRenderer.getMidiAndBeatAtMouseClick(adjustedX, y)
+
         pianoRollWorld.dirtyNote = pianoRollWorld.dirtyNote.map(note => new Note(midi, beat, note.lengthInBeats))
+
+        if(PianoRollConfig.DRAGGING_ENABLED){
+          if(pianoRollWorld.dirtyNote.isEmpty){
+            //Drag grid
+            Logger.debug("Dragging canvas", getClass)
+            val dx = x - mouseDownX
+            val dy = y - mouseDownY
+            if(math.abs(dx) > math.abs(dy)){
+              pianoRollWorld.shiftBeat(right = x > mouseDownX, division = 100)
+            }else{
+              pianoRollWorld.shiftRoll(up = y < mouseDownY, division = 80)
+            }
+          }
+        }
+
       }
       else if(settings.state == StatePencil){//drag to change length
         val (midi, beat) = pianoRollRenderer.getMidiAndBeatAtMouseClick(x, y)
@@ -86,17 +102,18 @@ class PianoRollController(pianoRollWorld: PianoRollWorld,
   }
 
   override def onKey(keyCode: Int): Unit = {
+    Logger.debug(keyCode.toString,this.getClass)
     keyCode match{
-      case KeyCode.LEFT => pianoRollWorld.shiftBeat(right = false)
-      case KeyCode.RIGHT => pianoRollWorld.shiftBeat(right = true)
-      case KeyCode.UP => pianoRollWorld.shiftRoll(up = true)
-      case KeyCode.DOWN => pianoRollWorld.shiftRoll(up = false)
+      case KeyCode.LEFT | KeyCode.A => pianoRollWorld.shiftBeat(right = false)
+      case KeyCode.RIGHT | KeyCode.D => pianoRollWorld.shiftBeat(right = true)
+      case KeyCode.UP | KeyCode.W => pianoRollWorld.shiftRoll(up = true)
+      case KeyCode.DOWN | KeyCode.S => pianoRollWorld.shiftRoll(up = false)
       case KeyCode.X => if(settings.state == StateSelect){
         //delete note if selected, and reset dirty
         pianoRollWorld.dirtyNote.foreach(pianoRollWorld.deleteNote)
         pianoRollWorld.dirtyNote = None
       }
-      case KeyCode.S => {
+      case KeyCode.E=> {
         settings.state = StateSelect
         writeBackDirtyNote()
         pianoRollRenderer.menuRenderer.selectToolExternal(MessageQueue.TOOL_SELECT)
@@ -108,7 +125,7 @@ class PianoRollController(pianoRollWorld: PianoRollWorld,
         pianoRollRenderer.menuRenderer.selectToolExternal(MessageQueue.TOOL_PENCIL)
 
       }
-      case KeyCode.C => pianoRollWorld.notes.empty()
+//      case KeyCode. => pianoRollWorld.notes.empty()
 //      case KeyCode.P => synth.play()
       case KeyCode.SPACE => {
         if(notePlayer.isPlaying){
