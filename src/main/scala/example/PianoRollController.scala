@@ -32,19 +32,32 @@ class PianoRollController(pianoRollWorld: PianoRollWorld,
 
       writeBackDirtyNote()
 
-      val note = pianoRollRenderer.getNoteAtMouseClick(x, y)
-      if(note.isDefined) {
-        noteOffsetFromStartX = x - pianoRollRenderer.getStartXForNote(note.get.beatPosition)
-        Logger.debug(s"Offset $noteOffsetFromStartX", getClass)
-        pianoRollWorld.deleteNote(note.get)
-        pianoRollWorld.dirtyNote = note
+      val noteAndTrack: Option[(Note, Int)] = pianoRollRenderer.getNoteAtMouseClick(x, y)
+
+      if(noteAndTrack.isDefined) {
+        val (note, track) = noteAndTrack.get
+        if(state == StateSelect){
+          pianoRollWorld.trackSelected(track)
+          pianoRollRenderer.menuRenderer.selectInstrumentExternal(track )
+          pianoRollWorld.deleteNote(note)
+        }
+        else if(state == StatePencil){
+          if(pianoRollWorld.isTrackActive(track)){//if we're editing the same, track, treat this as changing duration
+            Logger.debug(s"Offset $noteOffsetFromStartX", getClass)
+            pianoRollWorld.deleteNote(note)
+          }else{//otherwise create a brand new note
+            //there should be no dirty note right now
+            val (midi, beat) = pianoRollRenderer.getMidiAndBeatAtMouseClick(x ,y)//THIS IS COPY PASTED DOWN BELOY
+            val newNote = new Note(midi, beat, 0.1)
+          }
+        }
+        pianoRollWorld.dirtyNote = Some(note)//make the note dirty
+        noteOffsetFromStartX = x - pianoRollRenderer.getStartXForNote(note.beatPosition)
       }
       else{
-
         if(state == StatePencil) {//if adding note, create new note
           val (midi, beat) = pianoRollRenderer.getMidiAndBeatAtMouseClick(x ,y)
           val newNote = new Note(midi, beat, 0.1)
-
           pianoRollWorld.dirtyNote = Some(newNote)
         }
       }
@@ -52,7 +65,7 @@ class PianoRollController(pianoRollWorld: PianoRollWorld,
     else if(pianoRollRenderer.rulerRect.containsPoint(x, y)) {
       Logger.verbose(s"Piano ruler touched $x, $y", this.getClass)
       pianoRollWorld.locatorBeat = pianoRollRenderer.getBeatAtMouseClick(x)
-      log(s"Locator beat: ${pianoRollWorld.locatorBeat}")
+//      log(s"Locator beat: ${pianoRollWorld.locatorBeat}")
 
       if (notePlayer.isPlaying) {
         notePlayer.setPlayPoint(pianoRollWorld.locatorBeat, AudioManager.audio.currentTime)
@@ -119,11 +132,10 @@ class PianoRollController(pianoRollWorld: PianoRollWorld,
         pianoRollRenderer.menuRenderer.selectToolExternal(MessageQueue.TOOL_SELECT)
       }
       //case KeyCode.E => settings.state = StateEdit
-      case KeyCode.P => {
+      case KeyCode.P | KeyCode.R=> {
         settings.state = StatePencil
         writeBackDirtyNote()
         pianoRollRenderer.menuRenderer.selectToolExternal(MessageQueue.TOOL_PENCIL)
-
       }
 //      case KeyCode. => pianoRollWorld.notes.empty()
 //      case KeyCode.P => synth.play()
@@ -146,7 +158,13 @@ class PianoRollController(pianoRollWorld: PianoRollWorld,
   }
 
   def writeBackDirtyNote(): Unit = {
-    pianoRollWorld.dirtyNote.foreach(note => pianoRollWorld.addNote(note))
+    pianoRollWorld.dirtyNote.foreach(note => {
+      val min_length_to_write = 0.2
+      if(note.lengthInBeats > min_length_to_write){
+        pianoRollWorld.addNote(note)
+      }
+    })
+
     pianoRollWorld.dirtyNote = None
   }
 
@@ -175,7 +193,9 @@ class PianoRollController(pianoRollWorld: PianoRollWorld,
 
   override def onMouseUp(x: Double, y: Double): Unit = {
     super.onMouseUp(x , y)
-    //writeBackDirtyNote()
+    if(settings.state == StatePencil){
+      writeBackDirtyNote()
+    }
   }
 
   override def onEnd(): Unit = pianoRollWorld.locatorBeat = 0.0
@@ -205,8 +225,29 @@ class PianoRollController(pianoRollWorld: PianoRollWorld,
         }
         case HELP => {
           js.Dynamic.global.showHelpModal()
+        }
+        case PIANO => {
+          writeBackDirtyNote()
+          pianoRollWorld.trackSelected(0)
+        }
+        case VIOLIN => {
+          writeBackDirtyNote()
 
+          pianoRollWorld.trackSelected(1)
+        }
+        case BRASS => {
+          writeBackDirtyNote()
 
+          pianoRollWorld.trackSelected(2)
+        }
+        case FLUTE => {
+          writeBackDirtyNote()
+
+          pianoRollWorld.trackSelected(3)
+        }
+        case BASS => {
+          writeBackDirtyNote()
+          pianoRollWorld.trackSelected(4)
         }
         case _ =>
       }

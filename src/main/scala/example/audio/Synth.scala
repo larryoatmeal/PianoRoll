@@ -38,7 +38,6 @@ class Synth {
   )
 
 
-
   //polyphonic 
   def polyphonicPlay(note: Note, start: Double, end: Double) = {
     var i = 0

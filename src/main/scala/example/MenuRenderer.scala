@@ -47,10 +47,6 @@ class MenuRenderer(ctx: CanvasRenderingContext2D, rect: Rectangle, messageQueue:
   }
 
   //#Instruments
-
-
-
-
   def createSelectOne(activeImage: String,
                       inactiveImage: String,
                       message: Int,
@@ -63,19 +59,22 @@ class MenuRenderer(ctx: CanvasRenderingContext2D, rect: Rectangle, messageQueue:
     })
   }
 
-  val instrumentData: Array[(String, String, Int, () => Unit)] = Array("piano", "violin", "brass", "flute", "bass")
+  val instrumentData: Array[(String, String, Int, () => Unit)] = Array("piano", "violin", "trumpet", "flute", "bass")
     .zip(Array(MessageQueue.PIANO, MessageQueue.VIOLIN, MessageQueue.BRASS, MessageQueue.FLUTE, MessageQueue.BASS))
     .map {
       case (name: String, msg: Int) => (s"images/${name}_color.png", s"images/$name.png", msg, deactiveAllInstruments _)
     }
 
+
   val instrumentPanel: Vector[ActiveInactiveImage] = instrumentData.map{
     case (act, inact, msg, f) => createSelectOne(act, inact, msg, f)
   }.toVector
 
+  instrumentPanel.head.activate()//eek
+
   def deactiveAllInstruments(): Unit ={
     instrumentPanel.foreach{
-      _.deActivate();
+      _.deActivate()
     }
   }
   /**
@@ -89,6 +88,12 @@ class MenuRenderer(ctx: CanvasRenderingContext2D, rect: Rectangle, messageQueue:
       case MessageQueue.TOOL_SELECT =>  selectButton.activate()
     }
   }
+
+  def selectInstrumentExternal(index: Int): Unit ={
+    deactiveAllInstruments()
+    instrumentPanel(index).activate()
+  }
+
   def resetToolPanel(): Unit = toolPanel.foreach{_.deActivate()}
 
 

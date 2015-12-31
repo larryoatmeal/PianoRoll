@@ -37,6 +37,7 @@ class PianoRollWorld(val song: Song) {
 
   def addNote(note: Note): Unit ={
 //    Logger.verbose(s"Adding $note", this.getClass)
+
     getCurrentTrack.notes.add(note)
     //notes.logStructure()
   }
@@ -53,6 +54,7 @@ class PianoRollWorld(val song: Song) {
   def trackSelected(num: Int): Unit ={
     tracks.setTrack(num)
   }
+  def isTrackActive(num: Int) = tracks.currentTrackIndex == num
 
   def shiftBeat(right: Boolean, division: Int = STEP_RATIO) ={
     val magnitude = MyMath.ceil(widthBeats, division)

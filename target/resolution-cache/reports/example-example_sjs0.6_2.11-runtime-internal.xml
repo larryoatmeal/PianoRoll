@@ -7,7 +7,7 @@
 		revision="0.1-SNAPSHOT"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, phantom-js-jetty"
-		date="20150910191251"/>
+		date="20151230235506"/>
 	<dependencies>
 		<module organisation="com.scalawarrior" name="scalajs-createjs_sjs0.6_2.11">
 			<revision name="0.0.1-SNAPSHOT" status="integration" pubdate="20150616095149" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="2">

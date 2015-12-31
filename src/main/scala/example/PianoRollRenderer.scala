@@ -215,23 +215,26 @@ class PianoRollRenderer(pRollWorld: PianoRollWorld, canvas: html.Canvas, rect: R
   }
 
   //TODO: make this more efficient, only have to search bucket!
-  def getNoteAtMouseClick(x: Double, y: Double): Option[Note] ={
+  def getNoteAtMouseClick(x: Double, y: Double): Option[(Note, Int)] ={
     val (midi, beat) = getMidiAndBeatAtMouseClick(x, y)
 
     Logger.debug(s"Midi $midi", getClass)
     Logger.debug(s"Beat $beat", getClass)
 
-    val candidates: ArrayBuffer[Note] = pRollWorld.tracks.tracks.flatMap({
-      track => {
+    val candidates: ArrayBuffer[(Option[Note], Int)] = pRollWorld.tracks.tracks.zipWithIndex.map({
+      case (track, index) => {
         val noteIterator = track.notes.iterator(pRollWorld.startBeat, pRollWorld.startBeat + pRollWorld.widthBeats)
 
         //append the dirty note if necessary
         val modifiedIterator =
           if(pRollWorld.dirtyNote.isDefined) noteIterator ++ Iterable[Note](pRollWorld.dirtyNote.get) else noteIterator
-        modifiedIterator.find(Note.inNote(midi,beat,_))
+        (modifiedIterator.find(Note.inNote(midi,beat,_)), index)
       }
     })
-    candidates.headOption
+
+    candidates.filter(_._1.isDefined).map {
+      case (note, index) => (note.get, index)
+    }.headOption
   }
 
   def getStartXForNote(beat: Double) = {
@@ -245,7 +248,7 @@ object PianoRollRenderer{
   val PianoRollAltRowFillColor = "#E3F3F8"
   val PianoRollHorizontalRowColor = "#77FF98"
   val PianoRollNoteColor = "#FFA500"
-  val PianoRollEditingNoteColor = "#890034"
+  val PianoRollEditingNoteColor = "#444444"
   val PianoRollSettingsBackgroundColor = "#D3D3D3"
   val PianoRollLocatorColor = "#33CCFF"
 }

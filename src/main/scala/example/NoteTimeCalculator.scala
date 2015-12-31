@@ -39,7 +39,7 @@ object NoteTimeCalculator{
    * @param startBeat Start beat from which to play
    * @return
    */
-  def iterator(startBeat: Double, song: Song, notes: NotesDataStructure) = {
+  def iterator(startBeat: Double, song: Song, notes: NotesDataStructure): Iterator[(Note, Double)] = {
     val bpmIterator = song.cumulativeBpmMarkers.iterator
     bpmIterator.dropWhile((marker: BPMMarker) => marker.beatEnd < startBeat)
 

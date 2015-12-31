@@ -36,12 +36,19 @@ object MessageQueue{
   val TOOL_PENCIL = 4
   val HELP = 5
 
-
   val PIANO = 6
-  val VIOLIN = 6
-  val BRASS = 6
-  val FLUTE = 6
-  val BASS = 6
+  val VIOLIN = 7
+  val BRASS = 8
+  val FLUTE = 9
+  val BASS = 10
 
+//  //@hack this is really, really bad.
+//  def instrumentMsgToIndex(msg: Int) ={
+//    msg - 6
+//  }
+//  //@hack index to instrument msg
+//  def indexToInstrumentMsg(index: Int) = {
+//    index + 6
+//  }
 
 }

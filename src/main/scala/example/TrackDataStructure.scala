@@ -9,7 +9,7 @@ case class Track(notes: NotesDataStructure, name: String, patch: String, color: 
 class TrackDataStructure(totalBeats: Int) {
   //TODO: this class is very unsafe
   val tracks = new ArrayBuffer[Track]()
-  private var currentTrackIndex = 0
+  var currentTrackIndex = 0
 
   def newTrack(name: String, patch: String, color: String): Track ={
      Track(new NotesDataStructure(totalBeats), name, patch, color)
@@ -30,7 +30,6 @@ class TrackDataStructure(totalBeats: Int) {
       Logger.error(s"Track index $index out of range", this.getClass)
     }
   }
-
 
   def getCurrentTrack = tracks(currentTrackIndex)
 }

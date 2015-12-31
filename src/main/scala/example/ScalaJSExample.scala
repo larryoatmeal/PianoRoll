@@ -47,7 +47,7 @@ object ScalaJSExample {
     if(counter % frames == 0){
       val elapsedTime = timeStamp - prevTimStamp
       val fps = frames*1000/elapsedTime
-      log(s"FPS $fps")
+//      log(s"FPS $fps")
       counter = 0
       prevTimStamp = timeStamp
     }
