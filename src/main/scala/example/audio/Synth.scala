@@ -102,22 +102,23 @@ class Synth {
 
   def playNote(channel: Int, note: Note, start: Double, end: Double) = {
 
+    val gain = 0.2
     if(channel == 0){
-      generateOsc(note, start, end, "triangle", 0.5, ASDR(0.05, 0.01, 2, 0.1))
-      generateOsc(note, start, end, "square", 0.5, ASDR(0.05, 0.01, 2, 0.1))
+      generateOsc(note, start, end, "triangle", gain, ASDR(0.05, 0.01, 2, 0.1))
+      generateOsc(note, start, end, "square", gain, ASDR(0.05, 0.01, 2, 0.1))
       //      generateOsc(note, start, end, "square", 0.5)
     }
     else if(channel == 1){
       generateOsc(note, start, end, "sawtooth", 0.3, ASDR(0.2, 0.9, 1, 0.1))
-      generateOsc(note, start, end, "sine", 0.5, ASDR(0.2, 0.9, 1, 0.1) )
+      generateOsc(note, start, end, "sine", gain, ASDR(0.2, 0.9, 1, 0.1) )
     }else if(channel == 2){
-      generateOsc(note, start, end, "sawtooth", 0.5, ASDR(0.1, 0.9, 1, 0.1))
-      generateOsc(note, start, end, "sawtooth", 0.5, ASDR(0.1, 0.9, 1, 0.1), 0.1)
+      generateOsc(note, start, end, "sawtooth", gain, ASDR(0.1, 0.9, 1, 0.1))
+      generateOsc(note, start, end, "sawtooth", gain, ASDR(0.1, 0.9, 1, 0.1), 0.1)
     }else if(channel == 3){
-      generateOsc(note, start, end, "sine", 0.5, ASDR(0.1, 0.9, 1, 0.1), 0.1)
+      generateOsc(note, start, end, "sine", gain, ASDR(0.1, 0.9, 1, 0.1), 0.1)
     }
     else{
-      generateOsc(note, start, end, "square", 0.5, ASDR(0.1, 0.4, 1, 0.1))
+      generateOsc(note, start, end, "square", gain, ASDR(0.1, 0.4, 1, 0.1))
     }
   }
 
