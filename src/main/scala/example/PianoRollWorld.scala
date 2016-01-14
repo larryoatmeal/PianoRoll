@@ -16,7 +16,7 @@ class PianoRollWorld(val song: Song) {
   val maxMeasures: Int = maxTicks/10
   var startMeasure: Int = 0
 
-  var rollLowNote: Int = 50
+  var rollLowNote: Int = 40
   var rollRange: Int = 40
 
   val settings = new PianoRollSettings()

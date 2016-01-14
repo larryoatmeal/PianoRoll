@@ -7,7 +7,7 @@ package example.audio
 import AudioManager._
 import example.{Logger, Note}
 import org.scalajs.dom
-import org.scalajs.dom.raw.{GainNode, OscillatorNode}
+import org.scalajs.dom.raw.{BiquadFilterNode, GainNode, OscillatorNode}
 
 import scala.collection.immutable.IndexedSeq
 import scala.collection.mutable
@@ -73,6 +73,16 @@ class Synth {
 
   val oscList = ArrayBuffer[OscillatorNode]()
 
+  val outputNode = {
+    val filter = audio.createBiquadFilter()
+    filter.`type` = "lowpass"
+    filter.frequency.value = 1500
+
+    filter.connect(audio.destination)
+    filter
+  }
+
+
   def generateOsc(note: Note, start: Double, end: Double, shape: String, gain: Double, asdr: ASDR = standardASDR, detune: Double = 0): Unit ={
     val oscillator: OscillatorNode = audio.createOscillator()
     val pitch = Math.pow(2.0, (note.midi+ detune - 69) / 12.0) * 440.0
@@ -89,7 +99,7 @@ class Synth {
     gainNode.gain.setTargetAtTime(0, end, secondsToTimeConstant(asdr.r))
 
     oscillator.connect(gainNode)
-    gainNode.connect(audio.destination)
+    gainNode.connect(outputNode)
 
     oscillator.start(start)
     oscillator.stop(end + asdr.r)
